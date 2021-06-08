@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from 'react-native';
+import { View, ScrollView } from 'react-native';
 import homepageresponse from '../mocks/home.json';
 import { getComponent } from '../components/ComponentResolver';
 import { ComponentType } from '../constants';
@@ -19,12 +19,14 @@ export default function DynamicPage(props: DynamicPageProps) {
 	return (
 		<View style={{ flex: 1 }}>
 			<NavBar />
-			{
-				components.map((component: ComponentType) => {
-					const Component = getComponent(component.type);
-					return <Component {...component.data} navigation={navigation}/>
-				})
-			}
+			<ScrollView>
+				{
+					components.map((component: ComponentType) => {
+						const Component = getComponent(component.type);
+						return <Component {...component.data} navigation={navigation}/>
+					})
+				}
+			</ScrollView>
 		</View>
 	)
 }
