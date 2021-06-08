@@ -11,7 +11,7 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import { View, Text, Button, Image } from 'react-native';
+import {View, Text, Button, Image} from 'react-native';
 import TestData from './testData';
 
 interface ScreenParams {
@@ -33,100 +33,91 @@ function Screen({route, navigation}: ScreenParams) {
   );
 }
 
-
 const Login = () => {
-	return <Text>Login</Text>
-}
+  return <Text>Login</Text>;
+};
 
 const Search = () => {
-	return <Text>Search</Text>
-}
+  return <Text>Search</Text>;
+};
 
 const Signup = () => {
-	return <Text>Search</Text>
-}
+  return <Text>Search</Text>;
+};
 
-const DynamicPage = () => {
-	const components = fetch(props.url);
-	return components.map((component) => {
-		if(component.type === "IMAGE") {
-			return <ImageComponent {...component}/>
-		}
-	})
-}
+const DynamicPage = props => {
+  // const components = fetch(props.url);
+  const components = [
+    {
+      type: 'IMAGE',
+      value: {
+        url: 'http://imageUrl',
+        height: 20,
+        width: 30,
+      },
+      navigateTo: '/categories',
+    },
+    {
+      type: 'BANNER',
+      value: {
+        url: 'http://imageUrl',
+        height: 20,
+        width: 30,
+      },
+      navigateTo: '/categories',
+    },
+  ];
+  console.log('props', props);
+  return (
+    <View style={{flex: 1, backgroundColor: 'red', height: 200, width: 200}}>
+      <Text>Dynamic Page</Text>
+    </View>
+  );
+  // return components.map(component => {
+  //   if (component.type === 'IMAGE') {
+  //     return <Text>Image component</Text>;
+  //     // return <ImageComponent {...component} />;
+  //   }
+  // });
+};
 
-const ImageComponent = (props) => {
-
-
-	return <Image onPress={() => props.navigateTo && props.navigation.navigate('Screen', {url: props.navigateTo})} source={{uri: props.url}} style={{height: props.height, width: props.width}}/>
-}
-
-
-const components = [
-	{
-		type: "IMAGE",
-		value: {
-			url: 'http://imageUrl',
-			height: 20,
-			width: 30
-		},
-		navigateTo: '/categories'
-	},
-	{
-		type: "BANNER",
-		value: {
-			url: 'http://imageUrl',
-			height: 20,
-			width: 30
-		},
-		navigateTo: '/categories'
-	}
-]
+// const ImageComponent = props => {
+//   return (
+//     <Image
+//       onPress={() =>
+//         props.navigateTo &&
+//         props.navigation.navigate('Screen', {url: props.navigateTo})
+//       }
+//       source={{uri: props.url}}
+//       style={{height: props.height, width: props.width}}
+//     />;
+//   );
+// };
 
 const Test = () => {
+  // return (
+  //   <View>
+  //     <Text>Test Screen</Text>
+  //   </View>
+  // );
   const Stack = createStackNavigator();
-  // console.log(TestData);
+  // // console.log(TestData);
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRoute={'DynamicPage'}>
-		<Stack.Screen
-			name={'Login'}
-			key={'login'}
-			component={Login}
-		/>
-		<Stack.Screen
-			name={'Search'}
-			key={'search'}
-			component={Search}
-		/>
-		<Stack.Screen
-			name={'Signup'}
-			key={'signup'}
-			component={Signup}
-		/>
-		<Stack.Screen
-			name={'DynamicPage'}
-			key={'dynamicPage'}
-			component={DynamicPage}
-			initialParams={{url: '/'}}
-		/>
-
-
-
-        {/* {TestData.map(item => {
-          console.log(item);
-          return (
-            <Stack.Screen
-              name={item.name}
-              key={item.id}
-              component={Screen}
-              options={item.data}
-            />
-          );
-        })} */}
+      <Stack.Navigator>
+        <Stack.Screen name={'Login'} key={'login'} component={Login} />
+        <Stack.Screen name={'Search'} key={'search'} component={Search} />
+        <Stack.Screen name={'Signup'} key={'signup'} component={Signup} />
+        <Stack.Screen
+          name={'DynamicPage'}
+          key={'dynamicPage'}
+          component={DynamicPage}
+          initialParams={{url: '/'}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
+  // );
 };
 
 export default Test;
