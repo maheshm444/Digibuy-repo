@@ -1,0 +1,95 @@
+{
+	"pageMeta": {
+		
+	},
+	"components": [
+		{
+			"type": "CATEGORIES",
+			"data": {
+				"categories": [
+					{
+						"image": {
+							"url": "category men url",
+							"height": 50,
+							"width": 50
+						},
+						"text": {
+							"type": "H1",
+							"value": "Men"
+						},
+						"navigateTo": "/category/men"
+					},
+					{
+						"image": {
+							"url": "category women url",
+							"height": 50,
+							"width": 50
+						},
+						"text": {
+							"type": "H1",
+							"value": "Women"
+						},
+						"navigateTo": "/category/women"
+					},
+					
+					{
+						"image": {
+							"url": "category kids url",
+							"height": 50,
+							"width": 50
+						},
+						"text": {
+							"type": "H1",
+							"value": "Kids"
+						},
+						"navigateTo": "/category/kids"
+					}
+				]
+			} 
+		},
+		{
+			"type": "CATEGORIES",
+			"data": {
+				"categories": [
+					{
+						"image": {
+							"url": "category men url",
+							"height": 50,
+							"width": 50
+						},
+						"text": {
+							"type": "H1",
+							"value": "Men"
+						},
+						"navigateTo": "/category/men"
+					},
+					{
+						"image": {
+							"url": "category women url",
+							"height": 50,
+							"width": 50
+						},
+						"text": {
+							"type": "H1",
+							"value": "Women"
+						},
+						"navigateTo": "/category/women"
+					},
+					
+					{
+						"image": {
+							"url": "category kids url",
+							"height": 50,
+							"width": 50
+						},
+						"text": {
+							"type": "H1",
+							"value": "Kids"
+						},
+						"navigateTo": "/category/kids"
+					}
+				]
+			} 
+		}
+	]
+}
