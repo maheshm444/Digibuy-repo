@@ -1,9 +1,9 @@
 import React from "react";
 import { View, ScrollView } from 'react-native';
-import homepageresponse from '../mocks/home.json';
 import { getComponent } from '../components/ComponentResolver';
 import { ComponentType } from '../constants';
 import NavBar from '../components/NavBar/NavBar';
+import { fetchData } from '../util';
 
 interface DynamicPageProps {
 	url: string,
@@ -12,9 +12,11 @@ interface DynamicPageProps {
 
 export default function DynamicPage(props: DynamicPageProps) {
 	const { navigation } = props;
-	navigation.setOptions({ headerTitle: 'My page' });
+	
+	const url = props?.route?.params?.url;
+	const { components, pageData: { title } } = fetchData(url);
 
-	const { components } = homepageresponse;
+	navigation.setOptions({ headerTitle: title });
 
 	return (
 		<View style={{ flex: 1 }}>

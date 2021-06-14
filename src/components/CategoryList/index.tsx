@@ -18,27 +18,7 @@ interface CategoryItemProps {
 const CategoryList = ({item}: CategoryItemProps) => {
   return (
     <View>
-      <FlatList
-        data={item.categories}
-        renderItem={({item}) => (
-          <View>
-            <View style={styles.box}>
-              <View>
-                <Image
-                  style={styles.image}
-                  source={{
-                    uri: item.category.image,
-                  }}
-                />
-                <Text style={styles.title}>{item.category.title}</Text>
-              </View>
-            </View>
-          </View>
-        )}
-        keyExtractor={item => item.id}
-        showsHorizontalScrollIndicator={false}
-        horizontal
-      />
+      <Text>Category List component</Text>
     </View>
   );
 };

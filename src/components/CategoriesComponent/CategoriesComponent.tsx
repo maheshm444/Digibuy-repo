@@ -15,6 +15,6 @@ export default function CategoriesComponent(props: CategoriesProps) {
 	const { categories, navigation } = props;
 
 	return <View>
-		{categories && categories.map(category => <Text onPress={() => navigation.push('LOGIN')}>{category.text.value}</Text>)}
+		{categories && categories.map(category => <View><Text onPress={() => {console.log("click on category")}}>{category.text.value}</Text></View>)}
 	</View>
 }

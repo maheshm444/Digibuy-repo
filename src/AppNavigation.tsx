@@ -10,8 +10,8 @@ export default function AppNavigation() {
 	const Stack = createStackNavigator();
 	return (
 		<NavigationContainer>
-			<Stack.Navigator headerMode='none' initialRouteName={SCREENS.DYNAMIC_PAGE}>
-				<Stack.Screen name={SCREENS.DYNAMIC_PAGE} component={DynamicPage} initialParams={{ url: getUrlFromScreen(SCREENS.HOME) }}/>
+			<Stack.Navigator initialRouteName={SCREENS.DYNAMIC_PAGE}>
+				<Stack.Screen name={SCREENS.DYNAMIC_PAGE} component={DynamicPage} initialParams={{ url: '/' }}/>
 				<Stack.Screen name={SCREENS.LOGIN} component={Login} />
 			</Stack.Navigator>
 		</NavigationContainer>

@@ -14,7 +14,10 @@ export function getUrlFromScreen(screen: string) {
 }
 
 export const COMPONENT_TYPE = {
-	'CATEGORIES': 'CATEGORIES'
+	'CATEGORIES': 'CATEGORIES',
+	'IMAGE': 'IMAGE',
+	'CARAUSEL': 'CARAUSEL',
+	'PRODUCT_LIST_CARD': 'PRODUCT_LIST_CARD'
 }
 
 export interface ComponentType {

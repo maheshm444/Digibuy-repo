@@ -1,0 +1,15 @@
+{
+	"pageData": {
+		"title": "Product List page"
+	},
+	"components": [
+		{
+			"type": "PRODUCT_LIST_CARD",
+			"data": {
+				"title": "Puma tshirt",
+				"mrp": 100,
+				"navigateTo": "/productPage"
+			}
+		}
+	]
+}
