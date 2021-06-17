@@ -1,12 +1,12 @@
  export const SCREENS = {
 	'DYNAMIC_PAGE': 'DYNAMIC_PAGE',
 	'LOGIN': 'LOGIN',
-	'SEARCH': 'SEARCH',
+
 	'HOME': 'HOME'
 }
 
 export const SCREEN_TO_URL = {
-	[SCREENS.HOME]: '/'
+	[SCREENS.HOME] : '/'
 }
 
 export function getUrlFromScreen(screen: string) {
@@ -20,18 +20,18 @@ export const COMPONENT_TYPE = {
 	'PRODUCT_LIST_CARD': 'PRODUCT_LIST_CARD'
 }
 
-export interface ComponentType {
-	type: string,
-	data: any //remove any
-}
+// export interface ComponentType {
+// 	type: string,
+// 	data: any //remove any
+// }
 
-export interface ImageValue {
-	url: string,
-	height: number,
-	width: number
-}
+// export interface ImageValue {
+// 	url: string,
+// 	height: number,
+// 	width: number
+// }
 
-export interface TextValue {
-	type: string,
-	value: string
-}
+// export interface TextValue {
+// 	type: string,
+// 	value: string
+// }

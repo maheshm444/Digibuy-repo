@@ -1,7 +1,6 @@
 import React from "react";
 import { View, ScrollView } from 'react-native';
 import { getComponent } from '../components/ComponentResolver';
-import { ComponentType } from '../constants';
 import NavBar from '../components/NavBar/NavBar';
 import { fetchData } from '../util';
 
@@ -10,10 +9,10 @@ interface DynamicPageProps {
 	navigation: any //remove any
 }
 
-export default function DynamicPage(props: DynamicPageProps) {
+export default function DynamicPage(props) {
 	const { navigation } = props;
-	
 	const url = props?.route?.params?.url;
+	console.log(url);
 	const { components, pageData: { title } } = fetchData(url);
 
 	navigation.setOptions({ headerTitle: title });
@@ -23,7 +22,7 @@ export default function DynamicPage(props: DynamicPageProps) {
 			<NavBar />
 			<ScrollView>
 				{
-					components.map((component: ComponentType) => {
+					components.map((component) => {
 						const Component = getComponent(component.type);
 						return <Component {...component.data} navigation={navigation}/>
 					})
