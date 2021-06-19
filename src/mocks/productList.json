@@ -8,7 +8,15 @@
 			"data": {
 				"title": "Puma tshirt",
 				"mrp": 100,
-				"navigateTo": "/productPage"
+				"navigateTo": "/productPage?id=1"
+			}
+		},
+		{
+			"type": "PRODUCT_LIST_CARD",
+			"data": {
+				"title": "Puma pant",
+				"mrp": 100,
+				"navigateTo": "/productPage?id=2"
 			}
 		}
 	]

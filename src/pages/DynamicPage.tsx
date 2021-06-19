@@ -4,17 +4,17 @@ import { getComponent } from '../components/ComponentResolver';
 import NavBar from '../components/NavBar/NavBar';
 import { fetchData } from '../util';
 
-interface DynamicPageProps {
-	url: string,
-	navigation: any //remove any
-}
+// interface DynamicPageProps {
+// 	url: string,
+// 	navigation: any //remove any
+// }
 
 export default function DynamicPage(props) {
 	const { navigation } = props;
 	const url = props?.route?.params?.url;
 	console.log(url);
 	const { components, pageData: { title } } = fetchData(url);
-
+	console.log(components);
 	navigation.setOptions({ headerTitle: title });
 
 	return (
@@ -24,7 +24,7 @@ export default function DynamicPage(props) {
 				{
 					components.map((component) => {
 						const Component = getComponent(component.type);
-						return <Component {...component.data} navigation={navigation}/>
+						return <Component data={component.data} navigation={navigation}/>
 					})
 				}
 			</ScrollView>

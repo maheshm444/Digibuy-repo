@@ -1,26 +1,49 @@
-import React from 'react';
-import {View, FlatList, Text} from 'react-native';
-import CategoryItem from '../CategoryItem';
+// import React from 'react';
+// import {View, FlatList, Text, Image} from 'react-native';
+// import CategoryItem from '../CategoryItem';
+// import styles from './styles';
+
+// // interface CategoryItemProps {
+// //   item: {
+// //     item: {
+// //       id: string;
+// //       title: string;
+// //       customStyles?: object;
+// //       categories: [
+// //         {
+// //           id: string;
+// //           title: string;
+// //           image: string;
+// //         },
+// //       ];
+// //     };
+// //   };
+// // }
+
+
+
+import React from 'react'
+import { View, Text } from 'react-native'
+import { FlatList } from 'react-native-gesture-handler';
+import CategoryItem from '../CategoryItem'
 import styles from './styles';
 
-interface CategoryItemProps {
-  id: string;
-  title: string;
-  categories: [
-    {
-      id: string;
-      title: string;
-      image: string;
-    },
-  ];
+const categoryList = ({data, navigation}) => {
+  //console.log("categoryList", data);
+  return (
+    <View  style={[styles.root, {height:150}]}>
+      <FlatList
+      data={data}
+      renderItem = {(item) =>(
+      <CategoryItem item={item} navigation={navigation}/>
+      )
+    }
+       showsHorizontalScrollIndicator={false}
+       horizontal
+      />
+
+    </View>
+  )
 }
 
-const CategoryList = ({item}: CategoryItemProps) => {
-  return (
-    <View>
-      <Text>Category List component</Text>
-    </View>
-  );
-};
-
-export default CategoryList;
+export default categoryList

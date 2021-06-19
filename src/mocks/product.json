@@ -1,0 +1,21 @@
+{
+	"pageData": {
+		"title": "Moda Rapido"
+	},
+	"components": [
+		{
+			"type": "IMAGE_CAROUSEL",
+			"data":{
+                "id": "1",
+                "description": "Printed Round Neck T-Shirt",
+                "price":389,
+                "oldPrice": 649,
+                "off": "(40% off)",
+                "navigateTo":"/tStirts?id=1",
+                "image":
+                  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2378362/2018/6/9/270e0a7e-365b-4640-9433-b269c60bf3061528527188563-Moda-Rapido-Men-Maroon-Printed-Round-Neck-T-shirt-3811528527-1.jpg"
+              }
+        }
+
+	]
+}

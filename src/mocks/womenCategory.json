@@ -1,0 +1,53 @@
+{
+	"pageData": {
+		"title": "Women Categories"
+	},
+	"components": [
+		{
+			"type": "SUBCATEGORIES",
+			"data": [
+                {
+                "id":1,
+                "title": "Top",
+                "image":
+      "https://i.pinimg.com/736x/2f/b2/44/2fb2443e610392f288e61c983d4d01c4.jpg",
+				"navigateTo":"women/top" ,
+				"name": "Top Details"
+                },
+                {   
+                    "id":2,
+                    "title": "Jens",
+                    "image":
+          "https://www.iciw.com/bilder/artiklar/ICIW-344.jpg",
+                    "navigateTo":"women/jens" ,
+                    "name": "Jens Details"
+                },
+                {
+                    "id":3,
+                    "title": "Sneakers",
+                    "image":"https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
+                    "navigateTo":"men/sneakers" ,
+                    "name": "Sneakers Details"
+                },
+                {
+                    "id":4,
+                    "title": "Goggles",
+                    "image":
+          "https://ae01.alicdn.com/kf/Hf5b705bfd2e34eaf8d105df3c58f635do.jpg",
+                    "navigateTo":"men/goggles" ,
+                    "name": "goggles Details"
+                    },
+                    {   
+                        "id":5,
+                        "title": "Hats",
+                        "image":
+              "https://www.toptrendsguide.com/wp-content/uploads/2020/06/Mens-Hat-Styles.jpg",
+                        "navigateTo":"men/hats" ,
+                        "name": "Hats Details"
+                    }
+
+        ]
+		}
+        
+	]
+}

@@ -11,7 +11,8 @@ interface BannerItemProps {
   };
 }
 
-const BannerItem = ({item}: BannerItemProps) => {
+const BannerItem = (props) => {
+  const item = props.data
   const windowWidth = Dimensions.get('window').width;
   return (
     <View>
