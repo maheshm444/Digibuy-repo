@@ -1,0 +1,28 @@
+{
+	"pageData": {
+		"title": "Cart"
+	},
+	"components":[
+        {
+            "type":"SUBTOTAL",
+            "data":{
+                "title":"PROCEED to checkout",
+                "navigateTo":"/"
+            }
+        },
+        {
+            "type":"CART_SCREEN",
+            "data":{
+                "title":"checkout",
+                "navigateTo":"/"
+            }
+        },
+        {
+            "type":"CART_SCREEN",
+            "data":{
+                "title":"checkout",
+                "navigateTo":"/"
+            }
+        }
+    ]
+}

@@ -8,6 +8,7 @@ import womenCategoryJson from './mocks/womenCategory.json'
 import kidsCategoryJson from './mocks/kidsCategory.json'
 import tShirtJson from './mocks/tShirt.json'
 import productJson from './mocks/product.json'
+import cartJson from './mocks/cart.json'
 export function fetchData(url) {
 	if(url === '/') {
 		return homeJson;
@@ -23,6 +24,8 @@ export function fetchData(url) {
 		return tShirtJson;
 	}else if(url === '/products?id=1'){
 		return productJson;
+	}else if(url === '/cart'){
+		return cartJson;
 	}
 	 else if(url === '/productPage?id=1') {
 		return productPageJson;

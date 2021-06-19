@@ -8,6 +8,14 @@ import SubCategories from './SubCategories';
 import BannerItem from './BannerItem';
 import ProductItem from './ProductItem';
 import ImageCarousel from './ImageCarousel';
+import ProductHeader from './ProductHeader';
+import SizeSelector from './SizeSelector';
+import DetailBox from './DetailBox';
+import Details from './Details';
+import ButtonComponent from './ButtonComponent';
+import CartScreen from './CartScreen';
+import Cart from './Cart';
+import SubTotal from './CartScreen';
 
 
 export function getComponent(type: string) {
@@ -30,6 +38,20 @@ export function getComponent(type: string) {
 			return ProductItem;
 		case COMPONENT_TYPE.IMAGE_CAROUSEL:
 			return ImageCarousel;
+		case COMPONENT_TYPE.PRODUCT_HEADER:
+			return ProductHeader;
+		case COMPONENT_TYPE.SIZE_SELECTOR:
+			return SizeSelector;
+		case COMPONENT_TYPE.DETAIL_BOX:
+			return DetailBox;
+		case COMPONENT_TYPE.DETAILS:
+			return Details;
+		case COMPONENT_TYPE.BUTTON:
+			return ButtonComponent;
+		case COMPONENT_TYPE.SUBTOTAL:
+			return SubTotal;
+		case COMPONENT_TYPE.CART_SCREEN:
+			return Cart;
 		default:
 			return null;
 

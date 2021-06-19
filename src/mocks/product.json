@@ -5,16 +5,47 @@
 	"components": [
 		{
 			"type": "IMAGE_CAROUSEL",
-			"data":{
-                "id": "1",
-                "description": "Printed Round Neck T-Shirt",
-                "price":389,
-                "oldPrice": 649,
-                "off": "(40% off)",
-                "navigateTo":"/tStirts?id=1",
-                "image":
-                  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2378362/2018/6/9/270e0a7e-365b-4640-9433-b269c60bf3061528527188563-Moda-Rapido-Men-Maroon-Printed-Round-Neck-T-shirt-3811528527-1.jpg"
-              }
+			"data":[
+        {
+        "url": "https://assets.ajio.com/medias/sys_master/root/20210403/A8eO/606863a67cdb8c1f1474dd24/-473Wx593H-461085141-blue-MODEL3.jpg",
+        "id": 1
+
+},
+{
+        "url": "https://assets.ajio.com/medias/sys_master/root/20210403/dyZr/606863a67cdb8c1f1474dd2a/-473Wx593H-461085141-blue-MODEL5.jpg",
+        "id": 2
+},
+{
+        "url": "https://assets.ajio.com/medias/sys_master/root/20210403/GaRL/606863a67cdb8c1f1474dd50/-1117Wx1400H-461085141-blue-MODEL4.jpg",
+        "id": 3
+}]
+        },
+        {
+                "type":"PRODUCT_HEADER",
+                "data":{"jdfjd":"dbncjdj"}
+        },
+        {
+                "type":"SIZE_SELECTOR",
+                "data":{"jdfjd":"dbncjdj"}
+        },
+        {
+                "type":"DETAIL_BOX",
+                "data":{"jdfjd":"dbncjdj"}
+        },
+        {
+                "type":"DETAILS",
+                "data":{"jdfjd":"dbncjdj"}
+        },
+        {
+                "type":"BUTTON",
+                "data":{
+                        "title":"Add to Cart",
+                        "navigateTo":"/cart"
+                }
+        },
+        {
+                "type":"BUTTON",
+                "data":{"title":"Buy Now"}
         }
 
 	]
