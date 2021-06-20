@@ -7,6 +7,8 @@
             "type":"SUBTOTAL",
             "data":{
                 "title":"PROCEED to checkout",
+                "subTotal": 2700,
+                "items":2,
                 "navigateTo":"/"
             }
         },

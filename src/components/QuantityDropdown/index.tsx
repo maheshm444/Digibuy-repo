@@ -1,16 +1,20 @@
 import React, { useState } from 'react';
 import { View, Text, Pressable, StyleSheet } from 'react-native';
 
-const QuantityDropdown = ({countInStock}) => {
-  console.log(countInStock);
-    const [quantity, setQuantity] = useState(2)
+const QuantityDropdown = ({countInStock, changeQuantity}) => {
+    const [quantity, setQuantity] = useState(1)
   const onMinus = () => {
     setQuantity(Math.max(0, quantity - 1));
+    if(quantity>0){
+      changeQuantity(quantity-1)
+    }
   };
 
   const onPlus = () => {
-    if(quantity<countInStock)
+    if(quantity<countInStock){
     setQuantity(quantity + 1);
+    changeQuantity(quantity+1)
+  }
   };
 
   return (

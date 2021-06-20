@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, Text, StyleSheet, Dimensions, Image } from 'react-native'
 import ButtonComponent from '../ButtonComponent'
 import PriceComponent from '../PriceComponent'
 import QuantityDropdown from '../QuantityDropdown'
 const {height, width} = Dimensions.get('window')
 const Cart = ({data}) => {
+
+    const [qty, setQty] = useState(1)
+    const changeQuantity =(x)=>{
+        setQty(x)
+    }
     return (
         <View style={styles.cart}>
 
@@ -18,9 +23,9 @@ const Cart = ({data}) => {
                 <Text numberOfLines={1}>{data.productHeader}</Text>
                 <View style={styles.quantity}>
                     <Text style={styles.quantityText}>Quantity</Text>
-                    <QuantityDropdown countInStock={data.countInStock}/>
+                    <QuantityDropdown changeQuantity={changeQuantity} countInStock={data.countInStock}/>
                 </View>
-                <PriceComponent price={data.price} mrp={data.mrp}/>
+                <PriceComponent price={data.price*qty} mrp={data.mrp*qty}/>
                 <Text style={{fontSize:10, color:'gray'}}>{data.status}</Text>
             </View>
          </View>

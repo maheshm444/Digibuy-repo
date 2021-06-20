@@ -5,7 +5,7 @@ const SizeSelector = ({data}) => {
     const [select, setSelect] = useState('#fff')
     const selectSize = (e)=>{
         setSelect('#33BFB7')
-        console.warn('size selected', e.target.value)
+        console.warn('size selected', e.target)
     }
     return (
         <View style={styles.container}>

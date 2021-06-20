@@ -13,9 +13,8 @@ import SizeSelector from './SizeSelector';
 import DetailBox from './DetailBox';
 import Details from './Details';
 import ButtonComponent from './ButtonComponent';
-import CartScreen from './CartScreen';
 import Cart from './Cart';
-import SubTotal from './CartScreen';
+import SubTotal from './SubTotal';
 
 
 export function getComponent(type: string) {

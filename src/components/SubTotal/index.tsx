@@ -1,19 +1,18 @@
 import React from 'react'
 import { View, Text, ScrollView, FlatList } from 'react-native'
-import ButtonComponent from '../../components/ButtonComponent'
+import ButtonComponent from '../ButtonComponent'
 import Cart from '../Cart'
 
-const SubTotal = (props) => {
-    const cartProducts=[1,3,5]
+const SubTotal = ({data}) => {
     return (
         <View style={{flex:1}}>
-            <ButtonComponent data={props.data} onPress={()=>console.log("proceed to checkout")}/>
+            <ButtonComponent data={data} onPress={()=>console.log("proceed to checkout")}/>
 
           <View style={{flex:1}}>
             <Text style={{fontSize: 18, alignSelf:'center'}}>
-              Subtotal ({cartProducts.length} items):{' '}
+              Subtotal ({data.items} items):{' '}
               <Text style={{color: '#e47911', fontWeight: 'bold',}}>
-                $50
+              ₹ {data.subTotal}
               </Text>
             </Text>
           </View>
