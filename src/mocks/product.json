@@ -22,19 +22,39 @@
         },
         {
                 "type":"PRODUCT_HEADER",
-                "data":{"jdfjd":"dbncjdj"}
+                "data":{
+                        "title":"Casual regular sleve solid woman top",
+                        "mrp":2000,
+                        "price":1500,
+                        "rating":4.6
+                }
         },
         {
                 "type":"SIZE_SELECTOR",
-                "data":{"jdfjd":"dbncjdj"}
+                "data":["XL","L","M","S"]
         },
         {
                 "type":"DETAIL_BOX",
-                "data":{"jdfjd":"dbncjdj"}
+                "data":{
+                        "title":"Details",
+                        "description":" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate repellendus autem quisquam, molestias hic omnis minus eveniet id nobis animi in, enim aperiam tempora sapiente iure! Qui quisquam vero harum."
+                }
         },
         {
                 "type":"DETAILS",
-                "data":{"jdfjd":"dbncjdj"}
+                "data":{
+                        "title":"Product Details",
+                        "keyValuePair":[
+                                {
+                                        "key":"Neck",
+                                        "value":"High Neck"
+                                },
+                                {
+                                        "key":"Sleeve style",
+                                        "value":"Regular Style"
+                                }
+                        ]
+                }
         },
         {
                 "type":"BUTTON",
@@ -45,7 +65,9 @@
         },
         {
                 "type":"BUTTON",
-                "data":{"title":"Buy Now"}
+                "data":{"title":"Buy Now",
+                        "navigateTo":"/cart"
+                }
         }
 
 	]

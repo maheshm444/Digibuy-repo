@@ -4,29 +4,29 @@ import ButtonComponent from '../ButtonComponent'
 import PriceComponent from '../PriceComponent'
 import QuantityDropdown from '../QuantityDropdown'
 const {height, width} = Dimensions.get('window')
-const Cart = (props) => {
+const Cart = ({data}) => {
     return (
         <View style={styles.cart}>
 
          <View style={styles.cartDetails}>
             <View style={styles.left}>
                 {/*image */}
-                <Image style={styles.image} source={{ uri:'https://i.pinimg.com/564x/79/b4/79/79b479f2fed5feba1e14d1716585e623.jpg' }} />  
+                <Image style={styles.image} source={{ uri:data.productImage }} />  
             </View>
             <View style={styles.right}>
-                <Text style={styles.title}>Campus Sutra</Text>
-                <Text numberOfLines={1}>Campus Sutra Men Blue Colourblocked Round Neck T-shirt</Text>
+                <Text style={styles.title}>{data.productTitle}</Text>
+                <Text numberOfLines={1}>{data.productHeader}</Text>
                 <View style={styles.quantity}>
                     <Text style={styles.quantityText}>Quantity</Text>
-                    <QuantityDropdown/>
+                    <QuantityDropdown countInStock={data.countInStock}/>
                 </View>
-                <PriceComponent price={1000} mrp={1200}/>
-                <Text style={{fontSize:10, color:'gray'}}>Delivered by tomorrow wednesday | free</Text>
+                <PriceComponent price={data.price} mrp={data.mrp}/>
+                <Text style={{fontSize:10, color:'gray'}}>{data.status}</Text>
             </View>
          </View>
 
          <View style={styles.button}>
-            <ButtonComponent data={props.data} onPress={()=>console.log("Item removed")} title="- Remove"/>
+            <ButtonComponent data={data} onPress={()=>console.log("Item removed")} title="- Remove"/>     
          </View>
 
 

@@ -1,12 +1,12 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
-const DetailBox = () => {
+const DetailBox = ({data}) => {
     return (
         <View style={styles.container}>
-            <Text style={{fontSize:21, fontWeight:'bold'}}>Details</Text>
+            <Text style={{fontSize:21, fontWeight:'bold'}}>{data.title}</Text>
             <Text numberOfLines={5}>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate repellendus autem quisquam, molestias hic omnis minus eveniet id nobis animi in, enim aperiam tempora sapiente iure! Qui quisquam vero harum.
+               {data.description}
             </Text>
         </View>
     )
