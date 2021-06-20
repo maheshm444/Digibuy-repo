@@ -14,10 +14,6 @@ export function getUrlFromScreen(screen: string) {
 }
 
 export const COMPONENT_TYPE = {
-	// 'CATEGORIES': 'CATEGORIES',
-	// 'IMAGE': 'IMAGE',
-	// 'CARAUSEL': 'CARAUSEL',
-	// 'PRODUCT_LIST_CARD': 'PRODUCT_LIST_CARD',
 	'CATEGORY_LIST':'CATEGORY_LIST',
 	'SUBCATEGORIES':'SUBCATEGORIES',
 	'BANNER':'BANNER',
