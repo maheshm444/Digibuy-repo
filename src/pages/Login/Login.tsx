@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, Image, AsyncStorage} from 'react-native';
+import {View, Image, AsyncStorage, Text} from 'react-native';
 import {
   GoogleSignin,
   GoogleSigninButton,
@@ -14,6 +14,32 @@ const Login = (props) => {
   const { navigation } = props;
 
   navigation.setOptions({ headerShown: false });
+
+  const [user, setUser] = useState({})
+  //google signin
+
+  const signIn = async () => {
+    await GoogleSignin.hasPlayServices();
+    const userInfo = await GoogleSignin.signIn();
+    setUser(userInfo)
+    if (user) {
+      console.log("user info", userInfo);
+      await AsyncStorage.setItem("userInfo", JSON.stringify(userInfo));
+      props.navigation.push(SCREENS.DYNAMIC_PAGE, {url: getUrlFromScreen(SCREENS.HOME)})
+      // dispatch an action to set user info
+      // props.dispatch({type: "SET_USER_INFO", payload: userInfo})
+    }
+  }
+
+  const signOut = async () =>{
+    try {
+      await GoogleSignin.revokeAccess();
+      await GoogleSignin.signOut();
+      setUser({}); // Remember to remove the user from your app's state as well
+    } catch (error) {
+      console.error(error);
+    }
+  }
   
   return (
     <View style={style.container}>
@@ -28,18 +54,9 @@ const Login = (props) => {
           style={{width: '100%'}}
           size={GoogleSigninButton.Size.Wide}
           color={GoogleSigninButton.Color.Light}
-          onPress={async () => {
-            await GoogleSignin.hasPlayServices();
-            const userInfo = await GoogleSignin.signIn();
-            if (userInfo) {
-              console.log("user info", userInfo);
-              await AsyncStorage.setItem("userInfo", JSON.stringify(userInfo));
-			        props.navigation.push(SCREENS.DYNAMIC_PAGE, {url: getUrlFromScreen(SCREENS.HOME)})
-              // dispatch an action to set user info
-              // props.dispatch({type: "SET_USER_INFO", payload: userInfo})
-            }
-          }}
+          onPress={signIn}
         />
+        <Text onPress={signOut}>SignOut</Text>
       </View>
     </View>
   );

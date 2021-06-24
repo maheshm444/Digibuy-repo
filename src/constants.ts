@@ -1,7 +1,6 @@
  export const SCREENS = {
 	'DYNAMIC_PAGE': 'DYNAMIC_PAGE',
 	'LOGIN': 'LOGIN',
-
 	'HOME': 'HOME'
 }
 
@@ -25,7 +24,8 @@ export const COMPONENT_TYPE = {
 	'DETAILS':'DETAILS',
 	'BUTTON':'BUTTON',
 	'CART_SCREEN':'CART_SCREEN',
-	'SUBTOTAL':'SUBTOTAL'
+	'SUBTOTAL':'SUBTOTAL',
+	'SIGNOUT':'SIGNOUT'
 }
 
 // export interface ComponentType {
