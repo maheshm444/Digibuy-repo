@@ -5,7 +5,8 @@
 	"components": [
 	{
 		"type":"CATEGORY_LIST",
-		"data":[
+		"data":{"title":"title","categories":
+		[
 			{
 				"id": "1",
 				"title": "Men",
@@ -47,6 +48,7 @@
 			  }
 
 		]
+		}
 	},
 	
 	{

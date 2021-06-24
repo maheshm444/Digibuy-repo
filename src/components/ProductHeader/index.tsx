@@ -5,11 +5,11 @@ import Rating from '../Rating'
 //import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 
-const ProductHeader = ({data}) => {
+const ProductHeader = (props) => {
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>{data.title}</Text>
-            <PriceComponent mrp={data.mrp} price={data.price}/>
+            <Text style={styles.title}>{props.title}</Text>
+            <PriceComponent mrp={props.mrp} price={props.price}/>
             <View style={styles.ratingContainer}>
                 <Rating/> 
             </View>

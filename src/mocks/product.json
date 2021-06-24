@@ -5,7 +5,8 @@
 	"components": [
 		{
 			"type": "IMAGE_CAROUSEL",
-			"data":[
+                        "data":{
+                        "imageCarousel":[
         {
         "url": "https://assets.ajio.com/medias/sys_master/root/20210403/A8eO/606863a67cdb8c1f1474dd24/-473Wx593H-461085141-blue-MODEL3.jpg",
         "id": 1
@@ -18,7 +19,7 @@
 {
         "url": "https://assets.ajio.com/medias/sys_master/root/20210403/GaRL/606863a67cdb8c1f1474dd50/-1117Wx1400H-461085141-blue-MODEL4.jpg",
         "id": 3
-}]
+}]}
         },
         {
                 "type":"PRODUCT_HEADER",
@@ -31,7 +32,7 @@
         },
         {
                 "type":"SIZE_SELECTOR",
-                "data":["XL","L","M","S"]
+                "data":{"sizeSelector":["XL","L","M","S"]}
         },
         {
                 "type":"DETAIL_BOX",

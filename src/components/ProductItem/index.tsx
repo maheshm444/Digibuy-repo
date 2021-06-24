@@ -9,11 +9,11 @@ import {
 } from 'react-native';
 import { SCREENS } from '../../constants';
 
-const ProductItem = ({data, navigation}) => {
+const ProductItem = ({productItem, navigation}) => {
   
   return (
     <View style={{flex:1}}>
-      {data.map((item)=>(
+      {productItem.map((item)=>(
         <TouchableOpacity onPress={()=>navigation.navigate(SCREENS.DYNAMIC_PAGE,{url:item.navigateTo})}>
       <View style={styles.root}>
         <Image style={styles.image} source={{uri: item.image}} />

@@ -26,7 +26,7 @@ let flatList
 // }
 
 
-const ImageCarousel = ({ data }) => {
+const ImageCarousel = ({ imageCarousel }) => {
     const scrollX = new Animated.Value(0)
     let position = Animated.divide(scrollX, width)
     //const [dataList, setDataList] = useState(data)
@@ -37,10 +37,10 @@ const ImageCarousel = ({ data }) => {
     // })
 
 
-    if (data && data.length) {
+    if (imageCarousel && imageCarousel.length) {
         return (
             <View>
-                <FlatList data={data}
+                <FlatList data={imageCarousel}
                     keyExtractor={(item, index) => 'key' + index}
                     horizontal
                     pagingEnabled
@@ -58,7 +58,7 @@ const ImageCarousel = ({ data }) => {
                 />
 
                 <View style={styles.dotView}>
-                    {data.map((_, i) => {
+                    {imageCarousel.map((_, i) => {
                         let opacity = position.interpolate({
                             inputRange: [i - 1, i, i + 1],
                             outputRange: [0.3, 1, 0.3],

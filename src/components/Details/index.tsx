@@ -1,11 +1,11 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
-const Details = ({data}) => {
+const Details = (props) => {
     return (
         <View style={styles.container}>
-            <Text style={{fontWeight:'bold', fontSize:21}}>{data.title}</Text>
-           {data.keyValuePair.map(({key,value})=>(
+            <Text style={{fontWeight:'bold', fontSize:21}}>{props.title}</Text>
+           {props.keyValuePair.map(({key,value})=>(
             <View style={styles.detail}>
                <Text style={styles.key}>{key}</Text>
                <Text style={styles.value}>{value}</Text>
