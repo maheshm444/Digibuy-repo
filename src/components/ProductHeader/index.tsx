@@ -2,7 +2,6 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import PriceComponent from '../PriceComponent';
 import Rating from '../Rating';
-//import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 const ProductHeader = ({data}) => {
   return (
@@ -15,6 +14,7 @@ const ProductHeader = ({data}) => {
     </View>
   );
 };
+
 
 export default ProductHeader;
 

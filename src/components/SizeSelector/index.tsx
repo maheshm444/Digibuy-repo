@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { View, Text, StyleSheet, Dimensions, TouchableOpacity } from 'react-native'
 const { width, height } = Dimensions.get('window')
-const SizeSelector = ({data}) => {
+const SizeSelector = ({sizeSelector}) => {
     const [select, setSelect] = useState('#fff')
     const selectSize = (e)=>{
         setSelect('#33BFB7')
@@ -9,7 +9,7 @@ const SizeSelector = ({data}) => {
     }
     return (
         <View style={styles.container}>
-            {data.map((size)=>(
+            {sizeSelector.map((size)=>(
                 <View style={styles.selector}><TouchableOpacity><Text onPress={(e)=>selectSize(e)} style={[styles.text, {backgroundColor:select}]}>{size}</Text></TouchableOpacity></View>
             ))}
         </View>

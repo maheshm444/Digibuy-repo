@@ -12,7 +12,7 @@ interface BannerItemProps {
 }
 
 const BannerItem = (props) => {
-  const item = props.data
+  const item = props
   const windowWidth = Dimensions.get('window').width;
   return (
     <View>

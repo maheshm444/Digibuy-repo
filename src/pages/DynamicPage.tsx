@@ -6,7 +6,6 @@ import {
   StyleSheet,
   Dimensions,
 } from 'react-native';
-// import styles from '../components/CategoryItem/styles';
 import {getComponent} from '../components/ComponentResolver';
 import NavBar from '../components/NavBar/NavBar';
 import {fetchData} from '../util';

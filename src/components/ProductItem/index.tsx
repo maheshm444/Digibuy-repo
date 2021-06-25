@@ -35,7 +35,6 @@ const ProductItem = ({data, navigation}) => {
               </View>
             </View>
           </View>
-          {/* </View> */}
         </TouchableOpacity>
       ))}
     </View>
