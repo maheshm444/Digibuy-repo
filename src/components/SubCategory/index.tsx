@@ -29,6 +29,7 @@ const SubCategories = ({item, navigation}) => {
 };
 
 export default SubCategories;
+
 const window = Dimensions.get('window');
 const imageWidth = window.width / 6 + 63;
 const imageHeight = window.width / 2;

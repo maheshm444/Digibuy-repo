@@ -20,7 +20,7 @@ export default function DynamicPage(props) {
   useEffect(() => {
     setTimeout(() => {
       setloading(false);
-    }, 2900);
+    }, 1500);
   }, [loading]);
 
   const {navigation} = props;

@@ -3,88 +3,86 @@
 		"title": "Home page"
 	},
 	"components": [
-	{
-		"type":"CATEGORY_LIST",
-		"data":{"title":"title","categories":
-		[
-			{
-				"id": "1",
-				"title": "Men",
-				   "image": "https://i.pinimg.com/originals/52/fa/e9/52fae97f4b9c528a35cc7bab1435d084.png",
-				"customStylesItem": {
-					  "width": 100,
-					  "height": 100
+		{
+			"type": "CATEGORY_LIST",
+			"data": {
+				"title": "title",
+				"categories": [
+					{
+						"id": "1",
+						"title": "Men",
+						"image": "https://i.pinimg.com/originals/52/fa/e9/52fae97f4b9c528a35cc7bab1435d084.png",
+						"customStylesItem": {
+							"width": 100,
+							"height": 100
+						},
+						"navigateTo": "/category/men",
+						"path": "CategoriesMen",
+						"component": "HorizontalListThreeCols",
+						"name": "Men's Categories"
 					},
-				"navigateTo": "/category/men",
-				"path": "CategoriesMen",
-				"component": "HorizontalListThreeCols",
-				"name":"Men's Categories"
-			  },
-			
-			  {
-				"id": "2",
-				"title": "Women",
-				"image": "https://pbs.twimg.com/media/DJA_D8UXYAAKqtq.jpg",
-				"customStylesItem":{
-					  "width": 100,
-					  "height": 100
-				},
-				"navigateTo": "/category/women",
-				"path": "CategoriesWomen",
-				"component": "HorizontalListThreeCols"
-			},
-			{
+					{
+						"id": "2",
+						"title": "Women",
+						"image": "https://pbs.twimg.com/media/DJA_D8UXYAAKqtq.jpg",
+						"customStylesItem": {
+							"width": 100,
+							"height": 100
+						},
+						"navigateTo": "/category/women",
+						"path": "CategoriesWomen",
+						"component": "HorizontalListThreeCols"
+					},
+					{
+						"id": "3",
+						"title": "Kids",
+						"image": "https://kidscreen.com/wp/wp-content/uploads/2019/04/VTech_Kidizoom_Smartwatch_DX2.jpg",
+						"customStylesItem": {
+							"width": 100,
+							"height": 100
+						},
+						"navigateTo": "/category/kids",
+						"path": "CategoriesKids",
+						"component": "HorizontalListThreeCols"
+					},
+					{
+						"id": "4",
+						"title": "Infants",
+						"image": "https://kidscreen.com/wp/wp-content/uploads/2019/04/VTech_Kidizoom_Smartwatch_DX2.jpg",
+						"customStylesItem": {
+							"width": 100,
+							"height": 100
+						},
+						"navigateTo": "/category/kids",
+						"path": "CategoriesKids",
+						"component": "HorizontalListThreeCols"
+					}
+				]
+			}
+		},
+		{
+			"type": "BANNER",
+			"data": {
 				"id": "3",
-				"title": "Kids",
-				"image":"https://kidscreen.com/wp/wp-content/uploads/2019/04/VTech_Kidizoom_Smartwatch_DX2.jpg",
-				"customStylesItem": {
-					  "width": 100,
-					  "height": 100
-				},
-				"navigateTo": "/category/kids",
-				"path": "CategoriesKids",
-				"component": "HorizontalListThreeCols"
-			  }
-
-		]
+				"title": "Custom Designed T-shirts",
+				"image": "https://images.squarespace-cdn.com/content/v1/5033cb9124ac5fb46aa37ae6/1534944212208-81QFXOLHWS6KZWKHOR39/ke17ZwdGBToddI8pDm48kGhrcnfzQ7Cn4fRw5JP2gVsUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYwL8IeDg6_3B-BRuF4nNrNcQkVuAT7tdErd0wQFEGFSnJ8B3d9f9ru3cpDN5dVDL6zAuRIkK_t3SrZPyKnnq0qn3VNpTh6rREgnnj2wUK_jNA/Print+Th%21s+Website+Banner+V2.png"
+			}
+		},
+		{
+			"type": "BANNER",
+			"data": {
+				"id": "2",
+				"title": "T-Shirts Starts from Rs.299",
+				"image": "https://i.pinimg.com/originals/7a/a5/be/7aa5be346f9ea28cd1d46b2e905845b3.jpg",
+			}
+		},
+		{
+			"type": "BANNER",
+			"data": {
+				"id": "3",
+				"title": "Women Tops",
+				"image": "https://s3.envato.com/files/201875733/BEE-1631-Fashion%20Sale%20Banners_01_Preview4.jpg",
+			}
 		}
-	},
-	
-	{
-		"type":"BANNER",
-		"data":{
-			"id": "3",
-			"title": "Custom Designed T-shirts",
-			"image":
-			  "https://images.squarespace-cdn.com/content/v1/5033cb9124ac5fb46aa37ae6/1534944212208-81QFXOLHWS6KZWKHOR39/ke17ZwdGBToddI8pDm48kGhrcnfzQ7Cn4fRw5JP2gVsUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYwL8IeDg6_3B-BRuF4nNrNcQkVuAT7tdErd0wQFEGFSnJ8B3d9f9ru3cpDN5dVDL6zAuRIkK_t3SrZPyKnnq0qn3VNpTh6rREgnnj2wUK_jNA/Print+Th%21s+Website+Banner+V2.png"
-		  }
-	},
-	{
-		"type":"BANNER",
-		"data":{
-			"id": "2",
-			"title": "T-Shirts Starts from Rs.299",
-			"image":
-			  "https://i.pinimg.com/originals/7a/a5/be/7aa5be346f9ea28cd1d46b2e905845b3.jpg",
-		  }
-	},
-	{
-		"type":"BANNER",
-		"data":{
-				"id":"1",
-				"title": "Tending Brooklinen T-Shirts Today",
-				"image":
-				 " https://blog.apparelnbags.com/wp-content/uploads/featured-tshirt-banner.jpg",
-			  }
-	}
-	
-	
-
-]}
-		
-	
-
-
-
-
-
+	]
+}

@@ -11,18 +11,17 @@ interface BannerItemProps {
   };
 }
 
-const BannerItem = (props) => {
-  const item = props
+const BannerItem = ({data}) => {
   const windowWidth = Dimensions.get('window').width;
   return (
     <View>
-      <Text style={styles.title}>{item.title}</Text>
+      <Text style={styles.title}>{data.title}</Text>
       <View style={[styles.box, {width: windowWidth - 30}]}>
         <View>
           <Image
             style={[styles.image, {width: windowWidth - 30}]}
             source={{
-              uri: item.image,
+              uri: data.image,
             }}
           />
         </View>

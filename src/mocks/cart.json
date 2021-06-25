@@ -1,57 +1,43 @@
 {
-	"pageData": {
-		"title": "Cart"
-	},
-	"components":[
+    "pageData": {
+        "title": "Cart"
+    },
+    "components": [
         {
-            "type":"SUBTOTAL",
-            "data":{
-                "title":"PROCEED to checkout",
+            "type": "SUBTOTAL",
+            "data": {
+                "title": "PROCEED to checkout",
                 "subTotal": 2700,
-                "items":2,
-                "navigateTo":"/"
+                "items": 2,
+                "navigateTo": "/"
             }
         },
         {
-            "type":"CART_SCREEN",
-            "data":{
-                "title":"checkout",
-                "productImage":"https://i.pinimg.com/564x/79/b4/79/79b479f2fed5feba1e14d1716585e623.jpg",
-                "productTitle":"Campus Sutra",
-                "productHeader":"Campus Sutra Men Blue Colourblocked Round Neck T-shirt",
-                "price":1000,
-                "mrp":1200,
-                "countInStock":3,
-                "status":"Deliverted by tomorrow wednesday | free",
-                "navigateTo":"/"
+            "type": "CART_SCREEN",
+            "data": {
+                "title": "checkout",
+                "productImage": "https://i.pinimg.com/564x/79/b4/79/79b479f2fed5feba1e14d1716585e623.jpg",
+                "productTitle": "Campus Sutra",
+                "productHeader": "Campus Sutra Men Blue Colourblocked Round Neck T-shirt",
+                "price": 1000,
+                "mrp": 1200,
+                "countInStock": 3,
+                "status": "Deliverted by tomorrow wednesday | free",
+                "navigateTo": "/"
             }
         },
         {
-            "type":"CART_SCREEN",
-            "data":{
-                "title":"checkout",
-                "productImage":"https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2021/4/12/77572bb1-9224-43c0-a1fb-1494505df64f1618216299627-1.jpg",
-                "productTitle":"H&M",
-                "productHeader":"Women Black Solid Skirt",
-                "price":1299,
-                "mrp":2499,
-                "countInStock":5,
-                "status":"Deliverted by today wednesday | paid",
-                "navigateTo":"/"
-            }
-        },
-        {
-            "type":"CART_SCREEN",
-            "data":{
-                "title":"checkout",
-                "productImage":"https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2021/4/12/77572bb1-9224-43c0-a1fb-1494505df64f1618216299627-1.jpg",
-                "productTitle":"H&M",
-                "productHeader":"Women Black Solid Skirt",
-                "price":1299,
-                "mrp":2499,
-                "countInStock":5,
-                "status":"Deliverted by today wednesday | paid",
-                "navigateTo":"/"
+            "type": "CART_SCREEN",
+            "data": {
+                "title": "checkout",
+                "productImage": "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2021/4/12/77572bb1-9224-43c0-a1fb-1494505df64f1618216299627-1.jpg",
+                "productTitle": "H&M",
+                "productHeader": "Women Black Solid Skirt",
+                "price": 1299,
+                "mrp": 2499,
+                "countInStock": 5,
+                "status": "Deliverted by today wednesday | paid",
+                "navigateTo": "/"
             }
         }
     ]

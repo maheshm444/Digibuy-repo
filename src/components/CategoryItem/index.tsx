@@ -38,17 +38,3 @@ const CategoryItem = ({item, navigation}) => {
 };
 
 export default CategoryItem;
-
-// import React from 'react'
-// import { View, Text } from 'react-native'
-
-// const CategoryItem = (props) => {
-
-//   return (
-//     <View>
-//       <Text>Category Items</Text>
-//     </View>
-//   )
-// }
-
-// export default CategoryItem

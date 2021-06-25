@@ -4,18 +4,16 @@ import {FlatList} from 'react-native-gesture-handler';
 import CategoryItem from '../CategoryItem';
 import styles from './styles';
 
-
-const categoryList = ({categories, navigation}) => {
+const categoryList = ({data, navigation}) => {
   return (
     <View style={[styles.root, {height: 150}]}>
       <FlatList
-      data={categories}
-      renderItem = {(item) =>(
-      <CategoryItem item={item} navigation={navigation}/>
-      )
-    }
-       showsHorizontalScrollIndicator={false}
-       horizontal
+        data={data.categories}
+        renderItem={item => (
+          <CategoryItem item={item} navigation={navigation} />
+        )}
+        showsHorizontalScrollIndicator={false}
+        horizontal
       />
     </View>
   );

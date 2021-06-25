@@ -8,7 +8,7 @@ const SubCategories = ({data, navigation}) => {
       <ScrollView
         contentContainerStyle={styles.contentContainer}
         showsVerticalScrollIndicator={false}>
-        {data.map(subCategory => (
+        {data.category.map(subCategory => (
           <SubCategory
             item={subCategory}
             key={subCategory.id}

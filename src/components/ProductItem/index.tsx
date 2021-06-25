@@ -12,7 +12,7 @@ import {SCREENS} from '../../constants';
 const ProductItem = ({data, navigation}) => {
   return (
     <View style={styles.root}>
-      {data.map(item => (
+      {data.productItem.map(item => (
         <TouchableOpacity
           key={item.id}
           onPress={() =>

@@ -1,16 +1,18 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
-const Details = (props) => {
-    return (
-        <View style={styles.container}>
-            <Text style={{fontWeight:'bold', fontSize:21}}>{props.title}</Text>
-           {props.keyValuePair.map(({key,value})=>(
-            <View style={styles.detail}>
-               <Text style={styles.key}>{key}</Text>
-               <Text style={styles.value}>{value}</Text>
-           </View>
-           ))}
+const Details = ({data}) => {
+  console.log('====================================');
+  console.log(data);
+  console.log('====================================');
+  
+  return (
+    <View style={styles.container}>
+      <Text style={{fontWeight: 'bold', fontSize: 21}}>{data.title}</Text>
+      {data.keyValuePair.map(({key, value}) => (
+        <View style={styles.detail}>
+          <Text style={styles.key}>{key}</Text>
+          <Text style={styles.value}>{value}</Text>
         </View>
       ))}
     </View>

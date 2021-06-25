@@ -1,75 +1,83 @@
 {
-	"pageData": {
-		"title": "Moda Rapido"
-	},
-	"components": [
-		{
-			"type": "IMAGE_CAROUSEL",
-                        "data":{
-                        "imageCarousel":[
-        {
-        "url": "https://assets.ajio.com/medias/sys_master/root/20210403/A8eO/606863a67cdb8c1f1474dd24/-473Wx593H-461085141-blue-MODEL3.jpg",
-        "id": 1
-
-},
-{
-        "url": "https://assets.ajio.com/medias/sys_master/root/20210403/dyZr/606863a67cdb8c1f1474dd2a/-473Wx593H-461085141-blue-MODEL5.jpg",
-        "id": 2
-},
-{
-        "url": "https://assets.ajio.com/medias/sys_master/root/20210403/GaRL/606863a67cdb8c1f1474dd50/-1117Wx1400H-461085141-blue-MODEL4.jpg",
-        "id": 3
-}]}
+        "pageData": {
+                "title": "Moda Rapido"
         },
-        {
-                "type":"PRODUCT_HEADER",
-                "data":{
-                        "title":"Casual regular sleve solid woman top",
-                        "mrp":2000,
-                        "price":1500,
-                        "rating":4.5
+        "components": [
+                {
+                        "type": "IMAGE_CAROUSEL",
+                        "data": {
+                                "imageCarousel": [
+                                        {
+                                                "url": "https://assets.ajio.com/medias/sys_master/root/20210403/A8eO/606863a67cdb8c1f1474dd24/-473Wx593H-461085141-blue-MODEL3.jpg",
+                                                "id": 1
+                                        },
+                                        {
+                                                "url": "https://assets.ajio.com/medias/sys_master/root/20210403/dyZr/606863a67cdb8c1f1474dd2a/-473Wx593H-461085141-blue-MODEL5.jpg",
+                                                "id": 2
+                                        },
+                                        {
+                                                "url": "https://assets.ajio.com/medias/sys_master/root/20210403/GaRL/606863a67cdb8c1f1474dd50/-1117Wx1400H-461085141-blue-MODEL4.jpg",
+                                                "id": 3
+                                        }
+                                ]
+                        }
+                },
+                {
+                        "type": "PRODUCT_HEADER",
+                        "data": {
+                                "title": "Casual regular sleve solid woman top",
+                                "mrp": 2000,
+                                "price": 1500,
+                                "rating": 4.6
+                        }
+                },
+                {
+                        "type": "SIZE_SELECTOR",
+                        "data": {
+                                "sizeSelector": [
+                                        "XL",
+                                        "L",
+                                        "M",
+                                        "S"
+                                ]
+                        }
+                },
+                {
+                        "type": "DETAIL_BOX",
+                        "data": {
+                                "title": "Details",
+                                "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate repellendus autem quisquam, molestias hic omnis minus eveniet id nobis animi in, enim aperiam tempora sapiente iure! Qui quisquam vero harum."
+                        }
+                },
+                {
+                        "type": "DETAILS",
+                        "data": {
+                                "title": "Product Details",
+                                "keyValuePair": [
+                                        {
+                                                "key": "Neck",
+                                                "value": "High Neck"
+                                        },
+                                        {
+                                                "key": "Sleeve style",
+                                                "value": "Regular Style"
+                                        }
+                                ]
+                        }
+                },
+                {
+                        "type": "BUTTON",
+                        "data": {
+                                "title": "Add to Cart",
+                                "navigateTo": "/cart"
+                        }
+                },
+                {
+                        "type": "BUTTON",
+                        "data": {
+                                "title": "Buy Now",
+                                "navigateTo": "/cart"
+                        }
                 }
-        },
-        {
-                "type":"SIZE_SELECTOR",
-                "data":{"sizeSelector":["XL","L","M","S"]}
-        },
-        {
-                "type":"DETAIL_BOX",
-                "data":{
-                        "title":"Details",
-                        "description":" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate repellendus autem quisquam, molestias hic omnis minus eveniet id nobis animi in, enim aperiam tempora sapiente iure! Qui quisquam vero harum."
-                }
-        },
-        {
-                "type":"DETAILS",
-                "data":{
-                        "title":"Product Details",
-                        "keyValuePair":[
-                                {
-                                        "key":"Neck",
-                                        "value":"High Neck"
-                                },
-                                {
-                                        "key":"Sleeve style",
-                                        "value":"Regular Style"
-                                }
-                        ]
-                }
-        },
-        {
-                "type":"BUTTON",
-                "data":{
-                        "title":"Add to Cart",
-                        "navigateTo":"/cart"
-                }
-        },
-        {
-                "type":"BUTTON",
-                "data":{"title":"Buy Now",
-                        "navigateTo":"/cart"
-                }
-        }
-
-	]
+        ]
 }

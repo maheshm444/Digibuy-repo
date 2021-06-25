@@ -12,53 +12,59 @@ import CarouselItem from '../CarouselItem';
 const {width, heigth} = Dimensions.get('window');
 let flatList;
 
+const ImageCarousel = ({data}) => {
+  const scrollX = new Animated.Value(0);
+  let position = Animated.divide(scrollX, width);
 
-const ImageCarousel = ({ imageCarousel }) => {
-    const scrollX = new Animated.Value(0)
-    let position = Animated.divide(scrollX, width)
+  if (data.imageCarousel && data.imageCarousel.length) {
+    return (
+      <View>
+        <FlatList
+          data={data.imageCarousel}
+          keyExtractor={(item, index) => 'key' + index}
+          horizontal
+          pagingEnabled
+          scrollEnabled
+          snapToAlignment="center"
+          scrollEventThrottle={16}
+          decelerationRate={'fast'}
+          showsHorizontalScrollIndicator={false}
+          renderItem={({item}) => {
+            return <CarouselItem item={item} />;
+          }}
+          onScroll={Animated.event([
+            {nativeEvent: {contentOffset: {x: scrollX}}},
+          ])}
+        />
 
-    if (imageCarousel && imageCarousel.length) {
-        return (
-            <View>
-                <FlatList data={imageCarousel}
-                    keyExtractor={(item, index) => 'key' + index}
-                    horizontal
-                    pagingEnabled
-                    scrollEnabled
-                    snapToAlignment="center"
-                    scrollEventThrottle={16}
-                    decelerationRate={"fast"}
-                    showsHorizontalScrollIndicator={false}
-                    renderItem={({ item }) => {
-                        return <CarouselItem item={item} />
-                    }}
-                    onScroll={Animated.event(
-                        [{ nativeEvent: { contentOffset: { x: scrollX } } }]
-                    )}
-                />
+        <View style={styles.dotView}>
+          {data.imageCarousel.map((_, i) => {
+            let opacity = position.interpolate({
+              inputRange: [i - 1, i, i + 1],
+              outputRange: [0.3, 1, 0.3],
+              extrapolate: 'clamp',
+            });
+            return (
+              <Animated.View
+                key={i}
+                style={{
+                  opacity,
+                  height: 10,
+                  width: 10,
+                  backgroundColor: '#595959',
+                  margin: 8,
+                  borderRadius: 5,
+                }}
+              />
+            );
+          })}
+        </View>
+      </View>
+    );
+  }
 
-                <View style={styles.dotView}>
-                    {imageCarousel.map((_, i) => {
-                        let opacity = position.interpolate({
-                            inputRange: [i - 1, i, i + 1],
-                            outputRange: [0.3, 1, 0.3],
-                            extrapolate: 'clamp'
-                        })
-                        return (
-                            <Animated.View
-                                key={i}
-                                style={{ opacity, height: 10, width: 10, backgroundColor: '#595959', margin: 8, borderRadius: 5 }}
-                            />
-                        )
-                    })}
-
-                </View>
-            </View>
-        )
-    }
-
-    return null
-}
+  return null;
+};
 
 const styles = StyleSheet.create({
   dotView: {flexDirection: 'row', justifyContent: 'center'},
