@@ -1,37 +1,13 @@
-// import React from 'react';
-// import {View, FlatList, Text, Image} from 'react-native';
-// import CategoryItem from '../CategoryItem';
-// import styles from './styles';
-
-// // interface CategoryItemProps {
-// //   item: {
-// //     item: {
-// //       id: string;
-// //       title: string;
-// //       customStyles?: object;
-// //       categories: [
-// //         {
-// //           id: string;
-// //           title: string;
-// //           image: string;
-// //         },
-// //       ];
-// //     };
-// //   };
-// // }
-
-
-
-import React from 'react'
-import { View, Text } from 'react-native'
-import { FlatList } from 'react-native-gesture-handler';
-import CategoryItem from '../CategoryItem'
+import React from 'react';
+import {View, Text, ActivityIndicator} from 'react-native';
+import {FlatList} from 'react-native-gesture-handler';
+import CategoryItem from '../CategoryItem';
 import styles from './styles';
 
+
 const categoryList = ({categories, navigation}) => {
-  //console.log("categoryList", data);
   return (
-    <View  style={[styles.root, {height:150}]}>
+    <View style={[styles.root, {height: 150}]}>
       <FlatList
       data={categories}
       renderItem = {(item) =>(
@@ -41,9 +17,8 @@ const categoryList = ({categories, navigation}) => {
        showsHorizontalScrollIndicator={false}
        horizontal
       />
-
     </View>
-  )
-}
+  );
+};
 
-export default categoryList
+export default categoryList;

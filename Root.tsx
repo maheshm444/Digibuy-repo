@@ -14,7 +14,6 @@ interface ScreenParams {
 }
 
 function Screen({route, navigation}: ScreenParams) {
-  // console.log(route);
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <Button title="Go back" onPress={() => navigation.push('Screen_3')} />
@@ -34,7 +33,7 @@ const Signup = () => {
   return <Text>Search</Text>;
 };
 
-const DynamicPage = (props) => {
+const DynamicPage = props => {
   // const components = fetch(props.url);
   const components = [
     {
@@ -56,34 +55,34 @@ const DynamicPage = (props) => {
       navigateTo: '/categories',
     },
   ];
-  console.log('props', props);
-//   return (
-//     <View style={{flex: 1, backgroundColor: 'red', height: 200, width: 200}}>
-//       <Text>Dynamic Page</Text>
-//     </View>
-//   );
+  //   return (
+  //     <View style={{flex: 1, backgroundColor: 'red', height: 200, width: 200}}>
+  //       <Text>Dynamic Page</Text>
+  //     </View>
+  //   );
 
   return components.map(component => {
     if (component.type === 'IMAGE') {
-	  return  <Button
-        title="Done"
-        onPress={() => {
-		  // Pass and merge params back to home screen
-          props.navigation.push('DynamicPage', {url: '/categories'});
-        }}
-      />
+      return (
+        <Button
+          title="Done"
+          onPress={() => {
+            // Pass and merge params back to home screen
+            props.navigation.push('DynamicPage', {url: '/categories'});
+          }}
+        />
+      );
       // return <ImageComponent {...component} />;
     }
   });
 };
-
 
 // const ImageComponent = props => {
 //   return (
 //     <Image
 //       onPress={() =>
 //         props.navigateTo &&
-        // props.navigation.navigate('DynamicPage', {url: props.navigateTo})
+// props.navigation.navigate('DynamicPage', {url: props.navigateTo})
 //       }
 //       source={{uri: props.url}}
 //       style={{height: props.height, width: props.width}}
@@ -91,10 +90,11 @@ const DynamicPage = (props) => {
 //   );
 // };
 
-{/* <DyanmicPage url='/'/>
+{
+  /* <DyanmicPage url='/'/>
 
-<DyanmicPage url='/categorues'/> */}
-
+<DyanmicPage url='/categorues'/> */
+}
 
 // class DynamicPage extends React.Component {
 // 	components = [
@@ -133,25 +133,27 @@ const DynamicPage = (props) => {
 // 		  });
 // 	}
 // }
- 
+
 const Stack = createStackNavigator();
-  
-const RootNavigation = (props) => {
-	return (
-		<NavigationContainer>
-			<Stack.Navigator initialRouteName="DynamicPage">
-			<Stack.Screen name="DynamicPage" component={DynamicPage} initialParams={{url: '/'}}/>
-			<Stack.Screen key="login" name="Login" component={Login} />
-			<Stack.Screen key="signup" name="SignUp" component={Signup} />
-			</Stack.Navigator>
-	   </NavigationContainer>
-	)
-}
+
+const RootNavigation = props => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="DynamicPage">
+        <Stack.Screen
+          name="DynamicPage"
+          component={DynamicPage}
+          initialParams={{url: '/'}}
+        />
+        <Stack.Screen key="login" name="Login" component={Login} />
+        <Stack.Screen key="signup" name="SignUp" component={Signup} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
 
 function App() {
-	return (
-	  <RootNavigation />
-	);
+  return <RootNavigation />;
 }
 
 export default App;

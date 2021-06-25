@@ -1,41 +1,21 @@
-import React, { useState, useEffect } from 'react'
-import { View, Text, StyleSheet, Dimensions, FlatList, Animated } from 'react-native'
-import CarouselItem from '../CarouselItem'
+import React, {useState, useEffect} from 'react';
+import {
+  View,
+  Text,
+  StyleSheet,
+  Dimensions,
+  FlatList,
+  Animated,
+} from 'react-native';
+import CarouselItem from '../CarouselItem';
 
-
-const { width, heigth } = Dimensions.get('window')
-let flatList
-
-// function infiniteScroll(dataList){
-//     const numberOfData = dataList.length
-//     let scrollValue = 0, scrolled = 0
-
-//     setInterval(function() {
-//         scrolled ++
-//         if(scrolled < numberOfData)
-//         scrollValue = scrollValue + width
-
-//         else{
-//             scrollValue = 0
-//             scrolled = 0
-//         }
-
-//         this.flatList.scrollToOffset({ animated: true, offset: scrollValue})
-        
-//     }, 3000)
-// }
+const {width, heigth} = Dimensions.get('window');
+let flatList;
 
 
 const ImageCarousel = ({ imageCarousel }) => {
     const scrollX = new Animated.Value(0)
     let position = Animated.divide(scrollX, width)
-    //const [dataList, setDataList] = useState(data)
-
-    // useEffect(()=> {
-    //     setDataList(data)
-    //     infiniteScroll(dataList)
-    // })
-
 
     if (imageCarousel && imageCarousel.length) {
         return (
@@ -77,12 +57,11 @@ const ImageCarousel = ({ imageCarousel }) => {
         )
     }
 
-    console.log('Please provide Images')
     return null
 }
 
 const styles = StyleSheet.create({
-    dotView: { flexDirection: 'row', justifyContent: 'center' }
-})
+  dotView: {flexDirection: 'row', justifyContent: 'center'},
+});
 
-export default ImageCarousel
+export default ImageCarousel;

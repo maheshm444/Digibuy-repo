@@ -8,14 +8,13 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import { SCREENS } from '../../constants';
+import {SCREENS} from '../../constants';
 
 const SubCategories = ({item, navigation}) => {
-    console.log(item);
   return (
     <TouchableOpacity
       onPress={() => {
-        navigation.push(SCREENS.DYNAMIC_PAGE, {url:item.navigateTo});
+        navigation.push(SCREENS.DYNAMIC_PAGE, {url: item.navigateTo});
       }}>
       <View style={styles.root}>
         <Image style={styles.image} source={{uri: item.image}} />

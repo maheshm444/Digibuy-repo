@@ -1,5 +1,5 @@
-import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import React from 'react';
+import {View, Text, StyleSheet} from 'react-native';
 
 const Details = (props) => {
     return (
@@ -12,27 +12,28 @@ const Details = (props) => {
            </View>
            ))}
         </View>
-    )
-}
+      ))}
+    </View>
+  );
+};
 
-export default Details
-
+export default Details;
 
 const styles = StyleSheet.create({
-    container:{
-        backgroundColor:'#bbedea',
-        margin:7,
-        borderRadius:5,
-        padding:10
-    },
-    detail:{
-        flexDirection:'row',
-    },
-    key:{
-        color: '#18181833',
-        flex:1
-    },
-    value:{
-        flex:1
-    }
-})
+  container: {
+    backgroundColor: '#bbedea',
+    margin: 7,
+    borderRadius: 5,
+    padding: 10,
+  },
+  detail: {
+    flexDirection: 'row',
+  },
+  key: {
+    color: '#18181833',
+    flex: 1,
+  },
+  value: {
+    flex: 1,
+  },
+});

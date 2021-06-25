@@ -1,7 +1,7 @@
-import React from 'react'
-import { View, Text, ScrollView, FlatList } from 'react-native'
-import ButtonComponent from '../ButtonComponent'
-import Cart from '../Cart'
+import React from 'react';
+import {View, Text, ScrollView, FlatList} from 'react-native';
+import ButtonComponent from '../ButtonComponent';
+import Cart from '../Cart';
 
 const SubTotal = (props) => {
   console.log("test",props);
@@ -21,17 +21,4 @@ const SubTotal = (props) => {
     )
 }
 
-export default SubTotal
-
-// import React from 'react'
-// import { View, Text } from 'react-native'
-
-// const CartScreen = () => {
-//     return (
-//         <View>
-//             <Text>cart</Text>
-//         </View>
-//     )
-// }
-
-// export default CartScreen
+export default SubTotal;

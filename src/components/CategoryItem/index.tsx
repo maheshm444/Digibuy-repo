@@ -1,9 +1,8 @@
 import React from 'react';
 import {View, Text, Image, TouchableOpacity} from 'react-native';
-import { SCREENS } from '../../constants';
+import {SCREENS} from '../../constants';
 // import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import styles from './styles';
-
 
 // interface CategoryItemProps {
 //   categoryType: string;
@@ -17,8 +16,7 @@ import styles from './styles';
 // }
 
 const CategoryItem = ({item, navigation}) => {
-console.log(navigation);
-   const customStylesItem = item.item.customStylesItem
+  const customStylesItem = item.item.customStylesItem;
   return (
     <View style={[styles.box, {...customStylesItem}]}>
       <View>
@@ -41,13 +39,11 @@ console.log(navigation);
 
 export default CategoryItem;
 
-
 // import React from 'react'
 // import { View, Text } from 'react-native'
 
 // const CategoryItem = (props) => {
 
-//   console.log(props);
 //   return (
 //     <View>
 //       <Text>Category Items</Text>
@@ -56,4 +52,3 @@ export default CategoryItem;
 // }
 
 // export default CategoryItem
-

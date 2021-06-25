@@ -1,15 +1,15 @@
- export const SCREENS = {
+export const SCREENS = {
 	'DYNAMIC_PAGE': 'DYNAMIC_PAGE',
 	'LOGIN': 'LOGIN',
 	'HOME': 'HOME'
 }
 
 export const SCREEN_TO_URL = {
-	[SCREENS.HOME] : '/'
-}
+  [SCREENS.HOME]: '/',
+};
 
 export function getUrlFromScreen(screen: string) {
-	return SCREEN_TO_URL[screen];
+  return SCREEN_TO_URL[screen];
 }
 
 export const COMPONENT_TYPE = {
