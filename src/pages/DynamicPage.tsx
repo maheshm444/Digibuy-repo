@@ -1,33 +1,68 @@
-import React from "react";
-import { View, ScrollView } from 'react-native';
-import { getComponent } from '../components/ComponentResolver';
+import React, {useState, useEffect} from 'react';
+import {
+  View,
+  ScrollView,
+  ActivityIndicator,
+  StyleSheet,
+  Dimensions,
+} from 'react-native';
+// import styles from '../components/CategoryItem/styles';
+import {getComponent} from '../components/ComponentResolver';
 import NavBar from '../components/NavBar/NavBar';
-import { fetchData } from '../util';
-
+import {fetchData} from '../util';
+import LottieView from 'lottie-react-native';
 // interface DynamicPageProps {
 // 	url: string,
 // 	navigation: any //remove any
 // }
 
 export default function DynamicPage(props) {
-	const { navigation } = props;
-	const url = props?.route?.params?.url;
-	console.log(url);
-	const { components, pageData: { title } } = fetchData(url);
-	console.log(components);
-	navigation.setOptions({ headerTitle: title });
+  const [loading, setloading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setloading(false);
+    }, 2900);
+  }, [loading]);
 
-	return (
-		<View style={{ flex: 1 }}>
-			<NavBar />
-			<ScrollView>
-				{
-					components.map((component) => {
-						const Component = getComponent(component.type);
-						return <Component data={component.data} navigation={navigation}/>
-					})
-				}
-			</ScrollView>
-		</View>
-	)
+  const {navigation} = props;
+  const url = props?.route?.params?.url;
+  const {
+    components,
+    pageData: {title},
+  } = fetchData(url);
+  navigation.setOptions({headerTitle: title});
+
+  return (
+    <View style={{flex: 1}}>
+      {loading && (
+        <LottieView
+          source={require('../../assets/loader.json')}
+          autoPlay
+          loop
+          style={styles.loading}
+          resizeMode="cover"
+        />
+      )}
+      {!loading && (
+        <>
+          <NavBar />
+          <ScrollView>
+            {components.map(component => {
+              const Component = getComponent(component.type);
+              return (
+                <Component data={component.data} navigation={navigation} />
+              );
+            })}
+          </ScrollView>
+        </>
+      )}
+    </View>
+  );
 }
+const styles = StyleSheet.create({
+  loading: {
+    width: 150,
+    alignSelf: 'center',
+    marginTop: 100,
+  },
+});
