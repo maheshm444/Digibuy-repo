@@ -1,0 +1,70 @@
+{
+	"pageData": {
+		"title": "Sneakers"
+	},
+	"components": [
+		{
+			"type": "PRODUCT_ITEM",
+      "data":{
+      "productItem":[ 
+              {
+                "id": "1",
+                "title": "Puma",
+                "description": "Unisex Kent 2.0 IDP Seakers",
+                "price": 1799,
+                "oldPrice": 2999,
+                "off": "(40% off)",
+                "navigateTo":"/womenproducts?id=11",
+                "image":
+                  "https://media1.popsugar-assets.com/files/thumbor/m2hsDAzsPQuhOpArFL-FZ9QAF5U/0x0:1500x2024/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2021/04/20/773/n/1922564/c9ce4a74607f107ac3b225.06048116_/i/Best-Women-Sneakers.jpg"
+              },
+              {
+                "id": "2",
+                "title": "Bella toes",
+                "description": "Women Sneakers",
+                "price":699,
+                "oldPrice": 999,
+                "off": "(30% off)",
+                "navigateTo":"/womenproducts?id=12",
+                "image":
+                  "https://ae01.alicdn.com/kf/HTB15Tx6bsfrK1Rjy1Xdq6yemFXaG/Shoes-Woman-Sneakers-Casual-Platform-Trainers-Women-Shoe-White-Tenis-Feminino-Zapatos-de-Mujer-Zapatillas-Womens.jpg"
+              },
+              {
+                "id": "3",
+                "title": "Roadster",
+                "description": "Women color bloked sneaker",
+                "price":1399,
+                "oldPrice": 3499,
+                "off": "(60% off)",
+                "navigateTo":"/womenproducts?id=13",
+                "image":
+                  "https://www.loewe.com/dw/image/v2/BBPC_PRD/on/demandware.static/-/Library-Sites-LOW_SharedLibrary/default/dwbe1cad5c/01%20SS21%20Woman/PLP_Women_Sneakers_Flowrunners0_2880x1620.jpg?sw=768&sfrm=jpg"
+              },
+              {
+                "id": "4",
+                "title": "DressBerry",
+                "description": "Women solid sneakers",
+                "price":999,
+                "oldPrice": 2499,
+                "off": "(60% off)",
+                "navigateTo":"/womenproducts?id=14",
+                "image":
+                  "https://fashionarrow.com/wp-content/uploads/2018/08/womens-sneakers-pinsv-women-running-shoes-krasovki-womens-sneakers-2017-sneakers-women-zapatillas-deportivas-iwpumnl-.jpg"
+              },
+              {
+                "id": "5",
+                "title": "Kood N Keech",
+                "description": "Women applique detail sneaker",
+                "price":1034,
+                "oldPrice": 2299,
+                "off": "(55% off)",
+                "navigateTo":"/womenproducts?id=15",
+                "image":
+                  "https://cdn.shopify.com/s/files/1/0872/3376/products/otbt-hybrid-pine-01_1600x.jpg?v=1601995550"
+              }
+            ]
+          }
+    }
+
+	]
+}

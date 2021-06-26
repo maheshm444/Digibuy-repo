@@ -1,0 +1,70 @@
+{
+	"pageData": {
+		"title": "Women Hats"
+	},
+	"components": [
+		{
+			"type": "PRODUCT_ITEM",
+      "data":{
+      "productItem":[ 
+              {
+                "id": "1",
+                "title": "Forclaz",
+                "description": "Solid Bucket Hat",
+                "price": 699,
+                "oldPrice": 800,
+                "off": "(20% off)",
+                "navigateTo":"/womenproducts?id=21",
+                "image":
+                  "https://ak.picdn.net/shutterstock/videos/2209681/thumb/1.jpg"
+              },
+              {
+                "id": "2",
+                "title": "FugaZee",
+                "description": "Urban Desert Printed",
+                "price":1039,
+                "oldPrice": 2599,
+                "off": "(60% off)",
+                "navigateTo":"/womenproducts?id=22",
+                "image":
+                  "https://ae01.alicdn.com/kf/HTB11VGocBGE3KVjSZFhq6AkaFXae/Q-Cotton-Linen-Breathable-Sun-Hats-For-Women-Summer-Fashion-Uv-Protection-Cap-Sexy-Bow-Retro.jpg_Q90.jpg_.webp"
+              },
+              {
+                "id": "3",
+                "title": "Golden Peacock",
+                "description": "Women Woven Design",
+                "price":764,
+                "oldPrice": 1699,
+                "off": "(55% off)",
+                "navigateTo":"/womenproducts?id=23",
+                "image":
+                  "https://canary.contestimg.wish.com/api/webimage/578e4ca25188f24dedbee7d7-large.jpg?cache_buster=2f4cc7fad89b6930c331dc27ddfbe3f9"
+              },
+              {
+                "id": "4",
+                "title": "Fab Seasons",
+                "description": "Unisex Solid Flat Cap",
+                "price":704,
+                "oldPrice": 1499,
+                "off": "(53% off)",
+                "navigateTo":"/womenproducts?id=24",
+                "image":
+                  "https://previews.123rf.com/images/photoagents/photoagents1611/photoagents161100171/66134930-outdoor-shot-of-beauty-woman-in-hat-and-sexy-underwear-posing-near-white-building-beautiful-girl-in-.jpg"
+              },
+              {
+                "id": "5",
+                "title": "Golden Peacock",
+                "description": "Women Woven Design",
+                "price": 749,
+                "oldPrice": 1499,
+                "off": "(50% off)",
+                "navigateTo":"/womenproducts?id=25",
+                "image":
+                  "https://ae01.alicdn.com/kf/HTB1kDqpQVXXXXX0aXXXq6xXFXXXA/Jinsen-Aite-New-Fashion-Beach-Hats-For-Women-Sun-Hats-Summer-Big-Brim-Hat-Woman-Floppy.jpg"
+              }
+            ]
+          }
+    }
+
+	]
+}

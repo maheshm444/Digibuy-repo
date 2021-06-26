@@ -2,15 +2,11 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
 const Details = ({data}) => {
-  console.log('====================================');
-  console.log(data);
-  console.log('====================================');
-  
   return (
     <View style={styles.container}>
       <Text style={{fontWeight: 'bold', fontSize: 21}}>{data.title}</Text>
       {data.keyValuePair.map(({key, value}) => (
-        <View style={styles.detail}>
+        <View style={styles.detail} key={key}>
           <Text style={styles.key}>{key}</Text>
           <Text style={styles.value}>{value}</Text>
         </View>
@@ -32,7 +28,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   key: {
-    color: '#18181833',
+    color: '#707173',
     flex: 1,
   },
   value: {

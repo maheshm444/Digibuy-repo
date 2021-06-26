@@ -8,7 +8,13 @@ const Rating = ({rating}) => {
   return (
     <View style={{flexDirection: 'row', padding: 10}}>
       {ratingArray.map(rating => (
-        <Icon name="star" size={20} color="#02d1c4" style={{paddingLeft: 2}} />
+        <Icon
+          key={rating}
+          name="star"
+          size={20}
+          color="#02d1c4"
+          style={{paddingLeft: 2}}
+        />
       ))}
     </View>
   );

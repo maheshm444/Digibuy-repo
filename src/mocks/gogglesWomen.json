@@ -1,0 +1,70 @@
+{
+	"pageData": {
+		"title": "Women Goggles"
+	},
+	"components": [
+		{
+			"type": "PRODUCT_ITEM",
+      "data":{
+      "productItem":[ 
+              {
+                "id": "1",
+                "title": "Quechua",
+                "description": "Unisex Wayfarer Sunglasses",
+                "price": 999,
+                "oldPrice": 1059,
+                "off": "(40% off)",
+                "navigateTo":"/womenproducts?id=16",
+                "image":
+                  "https://images.boardriders.com/globalGrey/quiksilver-products/all/default/large/eqwey03000_womensshade,l_xcpc_frt1.jpg"
+              },
+              {
+                "id": "2",
+                "title": "Wrogn",
+                "description": "Unisex Rectangle Glasses",
+                "price":1039,
+                "oldPrice": 2599,
+                "off": "(60% off)",
+                "navigateTo":"/womenproducts?id=17",
+                "image":
+                  "https://polaroidsunglasses.eu/pub/media/wysiwyg/polaroid-woman-sunglasses.jpg"
+              },
+              {
+                "id": "3",
+                "title": "Voyage",
+                "description": "Unisex aviator glasses",
+                "price":720,
+                "oldPrice": 1800,
+                "off": "(60% off)",
+                "navigateTo":"/womenproducts?id=18",
+                "image":
+                  "https://i.pinimg.com/originals/ea/11/81/ea1181e022d3358b9d2b687976fa449c.jpg"
+              },
+              {
+                "id": "4",
+                "title": "Royal son",
+                "description": "Unisex Round Glasses",
+                "price":699,
+                "oldPrice": 1999,
+                "off": "(70% off)",
+                "navigateTo":"/womenproducts?id=19",
+                "image":
+                  "https://www.shopperwear.com/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/b/a/baviron-brand-hd-polarized-sunglasses-women-luxury-new-fashion-sun-glasses-polaroid-lens-women-glasses-designer-extra-image-1.jpg"
+              },
+              {
+                "id": "5",
+                "title": "Swiss Design",
+                "description": "Unisex Glasses",
+                "price":989,
+                "oldPrice": 3299,
+                "off": "(55% off)",
+                "navigateTo":"/womenproducts?id=20",
+                "image":
+                  "https://www.topsunglasses.net/wp-content/uploads/2016/10/Pictures-of-Polarized-Sunglasses-for-Women.jpg"
+              }
+            ]
+          }
+    }
+
+	]
+}

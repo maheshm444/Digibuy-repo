@@ -43,6 +43,7 @@ const Header = (props) => {
   const login = () =>{
     navigation.navigate(SCREENS.LOGIN)
   }
+const Header = ({title, showLogo}) => {
   return (
     <View style={styles.root}>
       {
@@ -67,7 +68,7 @@ const Header = (props) => {
         name="search"
         size={20}
         onPress={() => alert('Search Data')}
-        color="#022e2b"
+        color="#72cdc8"
         style={styles.userButton}
       />
     </View>
@@ -90,5 +91,8 @@ const styles = StyleSheet.create({
   },
   userButton: {
     marginRight: window.width - 385,
+  },
+  logo: {
+    marginRight: window.width - 100,
   },
 });

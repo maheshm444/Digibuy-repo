@@ -1,6 +1,7 @@
 {
 	"pageData": {
-		"title": "Home page"
+		"title": "Home",
+		"showLogo": true
 	},
 	"components": [
 		{

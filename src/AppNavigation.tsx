@@ -2,7 +2,7 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import DynamicPage from './pages/DynamicPage';
-import {SCREENS, getUrlFromScreen} from './constants';
+import {SCREENS} from './constants';
 import Header from './components/Header';
 import Login from './pages/Login/Login';
 import theme from './design-system/theme'
@@ -17,7 +17,6 @@ function LogoTitle() {
 	  />
 	);
   }
-
 
 export default function AppNavigation() {
 	const Stack = createStackNavigator();
@@ -35,7 +34,7 @@ export default function AppNavigation() {
 				<Stack.Screen name={SCREENS.DYNAMIC_PAGE} component={DynamicPage} options={{
             headerRight: () => <Header />,
             headerStyle: {
-              backgroundColor: '#72cdc8',
+              backgroundColor: '#fff',
             },
           }} initialParams={{url: getUrlFromScreen(SCREENS.HOME)}}/>
 				<Stack.Screen name={SCREENS.LOGIN} component={Login} />
