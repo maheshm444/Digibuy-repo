@@ -8,10 +8,14 @@ import style from './LoginStyle';
 import images from '../../design-system/images';
 import theme from '../../design-system/theme';
 import { SCREENS, getUrlFromScreen } from '../../constants';
+import { useSelector } from 'react-redux';
+import { selectSignedIn } from '../../redux/userSlice';
 
 //declare the type of props
 const Login = (props) => {
   const { navigation } = props;
+  const {isSignedIn} = useSelector(selectSignedIn )
+  console.log(isSignedIn);
 
   navigation.setOptions({ headerShown: false });
 
