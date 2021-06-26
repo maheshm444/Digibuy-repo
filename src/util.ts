@@ -6,9 +6,9 @@ import productPageJson2 from './mocks/productPage2.json';
 import manCategoryJson from './mocks/menCategory.json';
 import womenCategoryJson from './mocks/womenCategory.json';
 import kidsCategoryJson from './mocks/kidsCategory.json';
-import tShirtJson from './mocks/tShirt.json';
+import tshirtmen from './mocks/tshirtmen.json';
 import productJson from './mocks/product.json';
-import cartJson from './mocks/cart.json';
+// import menProducts1 from './mocks/menProducts1.json';
 import topWomen from './mocks/topWomen.json';
 import jeanWomen from './mocks/jeanWomen.json';
 import womenproducts1 from './mocks/womenproducts1.json';
@@ -52,11 +52,11 @@ export function fetchData(url) {
   } else if (url === '/category/kids') {
     return kidsCategoryJson;
   } else if (url === '/men/tShirts') {
-    return tShirtJson;
+    return tshirtmen;
   } else if (url === '/products?id=1') {
     return productJson;
   } else if (url === '/cart') {
-    return cartJson;
+    return menProducts1;
   } else if (url === '/productPage?id=1') {
     return productPageJson;
   } else if (url === '/productPage?id=2') {

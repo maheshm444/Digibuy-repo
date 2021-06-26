@@ -18,8 +18,9 @@ export default function AppNavigation() {
           options={{
             headerRight: () => <Header />,
             headerStyle: {
-              backgroundColor: '#72cdc8',
+              backgroundColor: '#fff',
             },
+            headerTintColor: '#72cdc8',
           }}
         />
         <Stack.Screen name={SCREENS.LOGIN} component={Login} />
