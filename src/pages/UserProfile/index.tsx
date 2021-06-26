@@ -10,12 +10,14 @@ import {
 //import NavBar from '../../components/NavBar';
 import {Avatar} from 'react-native-elements';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import { useSelector } from 'react-redux';
-import { selectUserData } from '../../redux/userSlice';
+import {selectUserData} from '../../redux/userSlice';
+import {GoogleSignin} from '@react-native-google-signin/google-signin';
+import {setSignedIn, setUserData} from '../../redux/userSlice';
+import {useDispatch, useSelector} from 'react-redux';
 
 const MyAccountScreen = () => {
-  const userData = useSelector(selectUserData)
-  console.log(userData);
+  const userData = useSelector(selectUserData);
+  console.log('userData', userData);
   const options = [
     {
       id: '1',
@@ -32,14 +34,21 @@ const MyAccountScreen = () => {
       title: 'Help',
       icon: 'smile-o',
     },
+    {
+      id: '4',
+      title: 'Logout',
+      icon: 'user',
+    },
   ];
   return (
     <View style={styles.root}>
-
       <View style={styles.avtarContainer}>
         <Avatar
           size="xlarge"
-          title={userData.name.split(" ").map((n)=>n[0]).join("")}
+          title={userData.name
+            .split(' ')
+            .map(n => n[0])
+            .join('')}
           rounded
           source={{
             uri: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
@@ -120,9 +129,32 @@ const MyordersOption = (item: MyordersOptionProps) => {
             size={25}
             color={'#33BFB7'}
           />
-          <Text style={styles.title}>{item.title}</Text>
+          {item.title.toLowerCase() === 'logout' ? (
+            <Text style={styles.title} onPress={logout}>
+              {item.title}
+            </Text>
+          ) : (
+            <Text style={styles.title}>{item.title}</Text>
+          )}
         </View>
       </TouchableOpacity>
     </View>
   );
+};
+
+const logout = async () => {
+  console.log('test');
+
+  // const dispatch = useDispatch();
+  // try {
+  //   // await GoogleSignin.revokeAccess();
+  //   // await GoogleSignin.signOut();
+  //   dispatch(setSignedIn(false));
+  //   dispatch(setUserData(null));
+  //   console.log('userData', userData);
+
+  //   //setUser({}); // Remember to remove the user from your app's state as well
+  // } catch (error) {
+  //   console.error(error);
+  // }
 };
