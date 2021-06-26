@@ -1,6 +1,6 @@
+import React, { useState } from 'react';
 import { GoogleSignin } from '@react-native-google-signin/google-signin';
 import { useNavigation } from '@react-navigation/native';
-import React, { useState } from 'react';
 import {StyleSheet, Dimensions, View, Image} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { useDispatch, useSelector } from 'react-redux';
@@ -43,7 +43,6 @@ const Header = (props) => {
   const login = () =>{
     navigation.navigate(SCREENS.LOGIN)
   }
-const Header = ({title, showLogo}) => {
   return (
     <View style={styles.root}>
       {
@@ -74,7 +73,6 @@ const Header = ({title, showLogo}) => {
     </View>
   );
 };
-
 export default Header;
 
 const window = Dimensions.get('window');
@@ -94,5 +92,5 @@ const styles = StyleSheet.create({
   },
   logo: {
     marginRight: window.width - 100,
-  },
+  }
 });

@@ -2,7 +2,7 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import DynamicPage from './pages/DynamicPage';
-import {SCREENS} from './constants';
+import {getUrlFromScreen, SCREENS} from './constants';
 import Header from './components/Header';
 import Login from './pages/Login/Login';
 import theme from './design-system/theme'
