@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, Image, AsyncStorage, Text} from 'react-native';
+import {View, Image, AsyncStorage, Text, Button} from 'react-native';
 import {
   GoogleSignin,
   GoogleSigninButton,
@@ -8,26 +8,35 @@ import style from './LoginStyle';
 import images from '../../design-system/images';
 import theme from '../../design-system/theme';
 import { SCREENS, getUrlFromScreen } from '../../constants';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectSignedIn,selectUserData, } from '../../redux/userSlice';
+import {setSignedIn,setUserData} from '../../redux/userSlice'
 
 //declare the type of props
 const Login = (props) => {
   const { navigation } = props;
-
+  const isSignedIn = useSelector(selectSignedIn);
+  const userData = useSelector(selectUserData);
+  const Dispatch = useDispatch()
   navigation.setOptions({ headerShown: false });
-
+console.log(userData);
   const [user, setUser] = useState({})
   //google signin
-
+  
   const signIn = async () => {
+    
     await GoogleSignin.hasPlayServices();
     const userInfo = await GoogleSignin.signIn();
     setUser(userInfo)
-    if (user) {
-      console.log("user info", userInfo);
+    if (userInfo) {
+      
+      //console.log("user info", userInfo);
       await AsyncStorage.setItem("userInfo", JSON.stringify(userInfo));
       props.navigation.push(SCREENS.DYNAMIC_PAGE, {url: getUrlFromScreen(SCREENS.HOME)})
       // dispatch an action to set user info
       // props.dispatch({type: "SET_USER_INFO", payload: userInfo})
+      Dispatch(setSignedIn(true))
+      Dispatch(setUserData(userInfo.user))
     }
   }
 
@@ -56,7 +65,6 @@ const Login = (props) => {
           color={GoogleSigninButton.Color.Light}
           onPress={signIn}
         />
-        <Text onPress={signOut}>SignOut</Text>
       </View>
     </View>
   );

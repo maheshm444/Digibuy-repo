@@ -1,7 +1,9 @@
 import { GoogleSignin } from '@react-native-google-signin/google-signin';
 import React from 'react';
 import 'react-native-gesture-handler';
+import { Provider } from 'react-redux';
 import AppNavigation from './src/AppNavigation';
+import store from './src/redux/store';
 
   
 const App = () => {
@@ -13,7 +15,9 @@ const App = () => {
 
   return (
 	//Redux integeration
-	<AppNavigation />
+  <Provider store={store}>
+    <AppNavigation />
+  </Provider>
   );
 };
 
