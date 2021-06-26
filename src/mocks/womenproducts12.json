@@ -1,6 +1,6 @@
 {
         "pageData": {
-                "title": "Moda Rapido"
+                "title": "Puma"
         },
         "components": [
                 {
@@ -8,16 +8,8 @@
                         "data": {
                                 "imageCarousel": [
                                         {
-                                                "url": "https://assets.ajio.com/medias/sys_master/root/20210403/A8eO/606863a67cdb8c1f1474dd24/-473Wx593H-461085141-blue-MODEL3.jpg",
+                                                "url": "https://ae01.alicdn.com/kf/HTB15Tx6bsfrK1Rjy1Xdq6yemFXaG/Shoes-Woman-Sneakers-Casual-Platform-Trainers-Women-Shoe-White-Tenis-Feminino-Zapatos-de-Mujer-Zapatillas-Womens.jpg",
                                                 "id": 1
-                                        },
-                                        {
-                                                "url": "https://assets.ajio.com/medias/sys_master/root/20210403/dyZr/606863a67cdb8c1f1474dd2a/-473Wx593H-461085141-blue-MODEL5.jpg",
-                                                "id": 2
-                                        },
-                                        {
-                                                "url": "https://assets.ajio.com/medias/sys_master/root/20210403/GaRL/606863a67cdb8c1f1474dd50/-1117Wx1400H-461085141-blue-MODEL4.jpg",
-                                                "id": 3
                                         }
                                 ]
                         }
@@ -25,10 +17,10 @@
                 {
                         "type": "PRODUCT_HEADER",
                         "data": {
-                                "title": "Casual regular sleve T-shirt",
-                                "mrp": 2000,
-                                "price": 1500,
-                                "rating": 4.6
+                                "title": "Unisex Kent 2.0 IDP Seakers",
+                                "mrp": 699,
+                                "price": 999,
+                                "rating": 3.5
                         }
                 },
                 {
@@ -80,4 +72,4 @@
                         }
                 }
         ]
-}
+    }

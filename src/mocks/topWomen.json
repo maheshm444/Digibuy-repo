@@ -1,0 +1,70 @@
+{
+	"pageData": {
+		"title": "Tops"
+	},
+	"components": [
+		{
+			"type": "PRODUCT_ITEM",
+      "data":{
+      "productItem":[ 
+              {
+                "id": "1",
+                "title": "Vero Moda",
+                "description": "Round Neck Black T-Shirt",
+                "price": 425,
+                "oldPrice": 649,
+                "off": "(53% off)",
+                "navigateTo":"/womenproducts?id=1",
+                "image":
+                  "https://ih1.redbubble.net/image.1654473456.5665/ssrco,classic_tee,womens,101010:01c5ca27c6,front_alt,square_product,600x600.u3.jpg"
+              },
+              {
+                "id": "2",
+                "title": "H & M",
+                "description": "Yoga Round Neck T-Shirt",
+                "price":389,
+                "oldPrice": 724,
+                "off": "(86% off)",
+                "navigateTo":"/womenproducts?id=2",
+                "image":
+                  "https://my-test-11.slatic.net/p/c9557bf9ec0d3ef33f9f3536acb4096c.jpg_720x720q80.jpg_.webp"
+              },
+              {
+                "id": "3",
+                "title": "Summer Wear",
+                "description": "Semi transparent Top",
+                "price":400,
+                "oldPrice": 657,
+                "off": "(44% off)",
+                "navigateTo":"/womenproducts?id=3",
+                "image":
+                  "https://cdn.shopify.com/s/files/1/0133/3248/0100/products/Sweetown-Transparent-Crop-Top-Long-Sleeve-Tshirts-Mesh-See-Through-Top-Women-Sexy-Shirt-Black-2018_grande.jpg?v=1571759760"
+              },
+              {
+                "id": "4",
+                "title": "Boat Neck top",
+                "description": "Half Bot Necked Top",
+                "price":460,
+                "oldPrice": 543,
+                "off": "(28% off)",
+                "navigateTo":"/womenproducts?id=4",
+                "image":
+                  "https://www.dhresource.com/0x0/f2/albu/g8/M01/6D/F9/rBVaV11lLTKAEH8LAAqsMUWMBrw453.jpg/new-v-neck-long-sleeved-bottoming-shirt-nightclub.jpg"
+              },
+              {
+                "id": "5",
+                "title": "Dotted Top",
+                "description": "Light weight cotton Top",
+                "price":400,
+                "oldPrice": 649,
+                "off": "(42% off)",
+                "navigateTo":"/womenproducts?id=5",
+                "image":
+                  "https://photo.venus.com/im/21126660.jpg?preset=md_70"
+              }
+            ]
+          }
+    }
+
+	]
+}

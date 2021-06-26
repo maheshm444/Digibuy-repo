@@ -11,7 +11,7 @@
                 "id":1,
                 "title": "Top",
                 "image":
-      "https://i.pinimg.com/736x/2f/b2/44/2fb2443e610392f288e61c983d4d01c4.jpg",
+      "https://assetscdn1.paytm.com/images/catalog/product/A/AP/APPJOLLIFY-WOMESCS-220537922BC4/0..jpg",
 				"navigateTo":"women/top" ,
 				"name": "Top Details"
                 },
@@ -19,22 +19,22 @@
                     "id":2,
                     "title": "Jens",
                     "image":
-          "https://www.iciw.com/bilder/artiklar/ICIW-344.jpg",
+          "https://static.onecms.io/wp-content/uploads/sites/14/2016/07/28/100417-denim-petite-LEAD-2000.jpg",
                     "navigateTo":"women/jens" ,
                     "name": "Jens Details"
                 },
                 {
                     "id":3,
                     "title": "Sneakers",
-                    "image":"https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
-                    "navigateTo":"men/sneakers" ,
+                    "image":"https://media1.popsugar-assets.com/files/thumbor/8t96REjd0ugeBupzTgS4bNsgNVA/0x325:1500x2152/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2019/11/07/911/n/1922729/6dada8925dc483e7cbf767.25839449_/i/best-women-sneakers-2020.jpg",
+                    "navigateTo":"women/sneakers" ,
                     "name": "Sneakers Details"
                 },
                 {
                     "id":4,
                     "title": "Goggles",
                     "image":
-          "https://ae01.alicdn.com/kf/Hf5b705bfd2e34eaf8d105df3c58f635do.jpg",
+          "https://media1.popsugar-assets.com/files/thumbor/X0_CQ8U5tQPVamXxIKtuaMEULnw/0x144:3307x3451/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/02/07/890/n/1922564/6c3f73985e3dc6d08e4236.78018502_/i/best-sunglasses-for-women.jpg",
                     "navigateTo":"men/goggles" ,
                     "name": "goggles Details"
                     },
@@ -42,7 +42,7 @@
                         "id":5,
                         "title": "Hats",
                         "image":
-              "https://www.toptrendsguide.com/wp-content/uploads/2020/06/Mens-Hat-Styles.jpg",
+              "https://images-na.ssl-images-amazon.com/images/I/717qbfjfQcL._AC_UL1000_.jpg",
                         "navigateTo":"men/hats" ,
                         "name": "Hats Details"
                     }

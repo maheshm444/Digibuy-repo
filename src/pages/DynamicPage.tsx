@@ -16,13 +16,12 @@ import LottieView from 'lottie-react-native';
 // }
 
 export default function DynamicPage(props) {
-  const [loading, setloading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setloading(false);
-    }, 1500);
-  }, [loading]);
-
+  const [loading, setloading] = useState(false);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setloading(false);
+  //   }, 1500);
+  // }, [loading]);
   const {navigation} = props;
   const url = props?.route?.params?.url;
   const {
@@ -46,10 +45,14 @@ export default function DynamicPage(props) {
         <>
           <NavBar />
           <ScrollView>
-            {components.map(component => {
+            {components.map((component, index) => {
               const Component = getComponent(component.type);
               return (
-                <Component data={component.data} navigation={navigation} />
+                <Component
+                  key={index}
+                  data={component.data}
+                  navigation={navigation}
+                />
               );
             })}
           </ScrollView>

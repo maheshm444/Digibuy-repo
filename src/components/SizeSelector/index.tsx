@@ -16,7 +16,7 @@ const SizeSelector = ({data}) => {
   return (
     <View style={styles.container}>
       {data.sizeSelector.map(size => (
-        <View style={styles.selector}>
+        <View style={styles.selector} key={size}>
           <TouchableOpacity>
             <Text
               onPress={e => selectSize(e)}

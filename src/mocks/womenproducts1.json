@@ -1,0 +1,75 @@
+{
+    "pageData": {
+            "title": "Vero Moda"
+    },
+    "components": [
+            {
+                    "type": "IMAGE_CAROUSEL",
+                    "data": {
+                            "imageCarousel": [
+                                    {
+                                            "url": "https://ih1.redbubble.net/image.1654473456.5665/ssrco,classic_tee,womens,101010:01c5ca27c6,front_alt,square_product,600x600.u3.jpg",
+                                            "id": 1
+                                    }
+                            ]
+                    }
+            },
+            {
+                    "type": "PRODUCT_HEADER",
+                    "data": {
+                            "title": "Vero Moda",
+                            "mrp": 425,
+                            "price": 649,
+                            "rating": 4.5
+                    }
+            },
+            {
+                    "type": "SIZE_SELECTOR",
+                    "data": {
+                            "sizeSelector": [
+                                    "XL",
+                                    "L",
+                                    "M",
+                                    "S"
+                            ]
+                    }
+            },
+            {
+                    "type": "DETAIL_BOX",
+                    "data": {
+                            "title": "Details",
+                            "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate repellendus autem quisquam, molestias hic omnis minus eveniet id nobis animi in, enim aperiam tempora sapiente iure! Qui quisquam vero harum."
+                    }
+            },
+            {
+                    "type": "DETAILS",
+                    "data": {
+                            "title": "Product Details",
+                            "keyValuePair": [
+                                    {
+                                            "key": "Neck",
+                                            "value": "High Neck"
+                                    },
+                                    {
+                                            "key": "Sleeve style",
+                                            "value": "Regular Style"
+                                    }
+                            ]
+                    }
+            },
+            {
+                    "type": "BUTTON",
+                    "data": {
+                            "title": "Add to Cart",
+                            "navigateTo": "/cart"
+                    }
+            },
+            {
+                    "type": "BUTTON",
+                    "data": {
+                            "title": "Buy Now",
+                            "navigateTo": "/cart"
+                    }
+            }
+    ]
+}
