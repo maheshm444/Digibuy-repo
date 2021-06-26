@@ -1,0 +1,75 @@
+{
+        "pageData": {
+                "title": "Golden Peacock"
+        },
+        "components": [
+                {
+                        "type": "IMAGE_CAROUSEL",
+                        "data": {
+                                "imageCarousel": [
+                                        {
+                                                "url": "https://canary.contestimg.wish.com/api/webimage/578e4ca25188f24dedbee7d7-large.jpg?cache_buster=2f4cc7fad89b6930c331dc27ddfbe3f9",
+                                                "id": 1
+                                        }
+                                ]
+                        }
+                },
+                {
+                        "type": "PRODUCT_HEADER",
+                        "data": {
+                                "title": "Women Woven Design",
+                                "mrp": 764,
+                                "price": 1699,
+                                "rating": 4.5
+                        }
+                },
+                {
+                        "type": "SIZE_SELECTOR",
+                        "data": {
+                                "sizeSelector": [
+                                        "XL",
+                                        "L",
+                                        "M",
+                                        "S"
+                                ]
+                        }
+                },
+                {
+                        "type": "DETAIL_BOX",
+                        "data": {
+                                "title": "Details",
+                                "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate repellendus autem quisquam, molestias hic omnis minus eveniet id nobis animi in, enim aperiam tempora sapiente iure! Qui quisquam vero harum."
+                        }
+                },
+                {
+                        "type": "DETAILS",
+                        "data": {
+                                "title": "Product Details",
+                                "keyValuePair": [
+                                        {
+                                                "key": "Neck",
+                                                "value": "High Neck"
+                                        },
+                                        {
+                                                "key": "Sleeve style",
+                                                "value": "Regular Style"
+                                        }
+                                ]
+                        }
+                },
+                {
+                        "type": "BUTTON",
+                        "data": {
+                                "title": "Add to Cart",
+                                "navigateTo": "/cart"
+                        }
+                },
+                {
+                        "type": "BUTTON",
+                        "data": {
+                                "title": "Buy Now",
+                                "navigateTo": "/cart"
+                        }
+                }
+        ]
+    }

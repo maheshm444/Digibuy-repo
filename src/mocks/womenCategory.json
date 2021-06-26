@@ -35,7 +35,7 @@
                     "title": "Goggles",
                     "image":
           "https://media1.popsugar-assets.com/files/thumbor/X0_CQ8U5tQPVamXxIKtuaMEULnw/0x144:3307x3451/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/02/07/890/n/1922564/6c3f73985e3dc6d08e4236.78018502_/i/best-sunglasses-for-women.jpg",
-                    "navigateTo":"men/goggles" ,
+                    "navigateTo":"women/goggles" ,
                     "name": "goggles Details"
                     },
                     {   
@@ -43,7 +43,7 @@
                         "title": "Hats",
                         "image":
               "https://images-na.ssl-images-amazon.com/images/I/717qbfjfQcL._AC_UL1000_.jpg",
-                        "navigateTo":"men/hats" ,
+                        "navigateTo":"women/hats" ,
                         "name": "Hats Details"
                     }
 

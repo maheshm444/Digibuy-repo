@@ -1,0 +1,75 @@
+{
+        "pageData": {
+                "title": "Fab Seasons"
+        },
+        "components": [
+                {
+                        "type": "IMAGE_CAROUSEL",
+                        "data": {
+                                "imageCarousel": [
+                                        {
+                                                "url": "https://previews.123rf.com/images/photoagents/photoagents1611/photoagents161100171/66134930-outdoor-shot-of-beauty-woman-in-hat-and-sexy-underwear-posing-near-white-building-beautiful-girl-in-.jpg",
+                                                "id": 1
+                                        }
+                                ]
+                        }
+                },
+                {
+                        "type": "PRODUCT_HEADER",
+                        "data": {
+                                "title": "Unisex Solid Flat Cap",
+                                "mrp": 704,
+                                "price": 1499,
+                                "rating": 4.5
+                        }
+                },
+                {
+                        "type": "SIZE_SELECTOR",
+                        "data": {
+                                "sizeSelector": [
+                                        "XL",
+                                        "L",
+                                        "M",
+                                        "S"
+                                ]
+                        }
+                },
+                {
+                        "type": "DETAIL_BOX",
+                        "data": {
+                                "title": "Details",
+                                "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate repellendus autem quisquam, molestias hic omnis minus eveniet id nobis animi in, enim aperiam tempora sapiente iure! Qui quisquam vero harum."
+                        }
+                },
+                {
+                        "type": "DETAILS",
+                        "data": {
+                                "title": "Product Details",
+                                "keyValuePair": [
+                                        {
+                                                "key": "Neck",
+                                                "value": "High Neck"
+                                        },
+                                        {
+                                                "key": "Sleeve style",
+                                                "value": "Regular Style"
+                                        }
+                                ]
+                        }
+                },
+                {
+                        "type": "BUTTON",
+                        "data": {
+                                "title": "Add to Cart",
+                                "navigateTo": "/cart"
+                        }
+                },
+                {
+                        "type": "BUTTON",
+                        "data": {
+                                "title": "Buy Now",
+                                "navigateTo": "/cart"
+                        }
+                }
+        ]
+    }

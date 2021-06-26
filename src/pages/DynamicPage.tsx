@@ -17,11 +17,11 @@ import LottieView from 'lottie-react-native';
 
 export default function DynamicPage(props) {
   const [loading, setloading] = useState(false);
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setloading(false);
-  //   }, 1500);
-  // }, [loading]);
+  useEffect(() => {
+    setTimeout(() => {
+      setloading(false);
+    }, 1500);
+  }, [loading]);
   const {navigation} = props;
   const url = props?.route?.params?.url;
   const {
