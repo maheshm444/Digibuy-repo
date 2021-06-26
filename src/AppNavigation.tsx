@@ -8,6 +8,7 @@ import Login from './pages/Login/Login';
 import theme from './design-system/theme'
 import { Image } from 'react-native';
 import images from './design-system/images'   
+import UserProfile from './pages/UserProfile';
 function LogoTitle() {
 	return (
 	  <Image
@@ -38,6 +39,7 @@ export default function AppNavigation() {
             },
           }} initialParams={{url: getUrlFromScreen(SCREENS.HOME)}}/>
 				<Stack.Screen name={SCREENS.LOGIN} component={Login} />
+				<Stack.Screen name={SCREENS.USER_PROFILE} component={UserProfile} />
 			</Stack.Navigator>
 		</NavigationContainer>
 	)

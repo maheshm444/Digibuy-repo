@@ -11,6 +11,7 @@ import Details from './Details';
 import ButtonComponent from './ButtonComponent';
 import Cart from './Cart';
 import SubTotal from './SubTotal';
+import UserProfile from './UserProfile';
 
 
 export function getComponent(type: string) {

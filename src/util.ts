@@ -30,6 +30,7 @@ export function fetchData(url) {
 	 else if(url === '/productPage?id=1') {
 		return productPageJson;
 	} else if(url === '/productPage?id=2') {
-		return productPageJson2;
-	} else return subCategoriesJson;
+		return productPageJson2;	
+	} 
+	else return subCategoriesJson;
 }
