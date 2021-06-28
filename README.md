@@ -7,7 +7,7 @@
   Build mobile apps with React.
 </p>
 
-<p> Environment of the application can be detailed <a href="https://reactnative.dev/docs/environment-setup"> here <a/></p>
+<p> Environment of the application is provided in detail <a href="https://reactnative.dev/docs/environment-setup"> here <a/></p>
 
 <p>
     <strong>Setup instructions <strong>
