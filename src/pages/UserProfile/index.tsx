@@ -17,7 +17,6 @@ import {useDispatch, useSelector} from 'react-redux';
 
 const MyAccountScreen = () => {
   const userData = useSelector(selectUserData);
-  console.log('userData', userData);
   const options = [
     {
       id: '1',
@@ -143,18 +142,5 @@ const MyordersOption = (item: MyordersOptionProps) => {
 };
 
 const logout = async () => {
-  console.log('test');
-
-  // const dispatch = useDispatch();
-  // try {
-  //   // await GoogleSignin.revokeAccess();
-  //   // await GoogleSignin.signOut();
-  //   dispatch(setSignedIn(false));
-  //   dispatch(setUserData(null));
-  //   console.log('userData', userData);
-
-  //   //setUser({}); // Remember to remove the user from your app's state as well
-  // } catch (error) {
-  //   console.error(error);
-  // }
+ //copy logout function from header component
 };

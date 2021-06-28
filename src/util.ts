@@ -8,6 +8,7 @@ import womenCategoryJson from './mocks/womenCategory.json';
 import kidsCategoryJson from './mocks/kidsCategory.json';
 import tshirtmen from './mocks/tshirtmen.json';
 import productJson from './mocks/product.json';
+import cartJson from './mocks/cart.json'
 // import menProducts1 from './mocks/menProducts1.json';
 import topWomen from './mocks/topWomen.json';
 import jeanWomen from './mocks/jeanWomen.json';
@@ -40,6 +41,10 @@ import womenproducts23 from './mocks/womenproducts23.json';
 import womenproducts24 from './mocks/womenproducts24.json';
 import womenproducts25 from './mocks/womenproducts25.json';
 
+//kids
+import kidsEthnicWear from './mocks/kidsEthnicWear.json'
+import kidsProducts1 from './mocks/kidsProducts1.json'
+
 export function fetchData(url) {
   if (url === '/') {
     return homeJson;
@@ -56,7 +61,7 @@ export function fetchData(url) {
   } else if (url === '/products?id=1') {
     return productJson;
   } else if (url === '/cart') {
-    return menProducts1;
+    return cartJson;
   } else if (url === '/productPage?id=1') {
     return productPageJson;
   } else if (url === '/productPage?id=2') {
@@ -121,7 +126,13 @@ export function fetchData(url) {
     return womenproducts24;
   } else if (url === '/womenproducts?id=25') {
     return womenproducts25;
-  } else {
+  }else if (url === 'kids/ethnicWear') {
+    return kidsEthnicWear;
+  }
+  else if (url === '/kidsProducts?id=1') {
+    return kidsProducts1;
+  }
+   else {
     return subCategoriesJson;
   }
 }

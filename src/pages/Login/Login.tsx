@@ -19,37 +19,22 @@ const Login = (props) => {
   const userData = useSelector(selectUserData);
   const Dispatch = useDispatch()
   navigation.setOptions({ headerShown: false });
-console.log(userData);
   const [user, setUser] = useState({})
-  //google signin
   
+  //google signin
   const signIn = async () => {
     
     await GoogleSignin.hasPlayServices();
     const userInfo = await GoogleSignin.signIn();
     setUser(userInfo)
     if (userInfo) {
-      
-      //console.log("user info", userInfo);
       await AsyncStorage.setItem("userInfo", JSON.stringify(userInfo));
       props.navigation.push(SCREENS.DYNAMIC_PAGE, {url: getUrlFromScreen(SCREENS.HOME)})
-      // dispatch an action to set user info
-      // props.dispatch({type: "SET_USER_INFO", payload: userInfo})
       Dispatch(setSignedIn(true))
       Dispatch(setUserData(userInfo.user))
     }
   }
 
-  const signOut = async () =>{
-    try {
-      await GoogleSignin.revokeAccess();
-      await GoogleSignin.signOut();
-      setUser({}); // Remember to remove the user from your app's state as well
-    } catch (error) {
-      console.error(error);
-    }
-  }
-  
   return (
     <View style={style.container}>
       <Image
@@ -71,7 +56,3 @@ console.log(userData);
 };
 
 export default Login;
-
-// export default function Login() {
-// 	return <Text>Login</Text>
-// }

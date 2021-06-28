@@ -1,0 +1,37 @@
+{
+	"pageData": {
+		"title": "Ethnic Wear"
+	},
+	"components": [
+		{
+			"type": "PRODUCT_ITEM",
+      "data":{
+      "productItem":[ 
+              {
+                "id": "1",
+                "title": "Bitiya by Bhama",
+                "description": "Girls Peach-Coloured Fit and Flare Dress",
+                "price": 909,
+                "oldPrice": 2599,
+                "off": "(65% off)",
+                "navigateTo":"/kidsProducts?id=1",
+                "image":
+                  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2019/8/23/ede19c27-707f-48d9-9ee1-91fc111a8f741566545182187-2.jpg"
+              },
+              {
+                "id": "2",
+                "title": "Tiber Taber",
+                "description": "Tiber Taber",
+                "price":1950,
+                "oldPrice": 1950,
+                "off": "(0% off)",
+                "navigateTo":"/womenproducts?id=12",
+                "image":
+                  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8445083/2020/11/6/983a5024-fa1b-4e59-8f15-579ba41ea70a1604644035191TiberTaberBoysWhitePrintedPanchakattu1.jpg"
+              }
+            ]
+          }
+    }
+
+	]
+}

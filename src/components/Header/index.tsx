@@ -3,6 +3,7 @@ import { GoogleSignin } from '@react-native-google-signin/google-signin';
 import { useNavigation } from '@react-navigation/native';
 import {StyleSheet, Dimensions, View, Image} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import LIcon from 'react-native-vector-icons/AntDesign';
 import { useDispatch, useSelector } from 'react-redux';
 import { SCREENS } from '../../constants';
 import Login from '../../pages/Login/Login';
@@ -46,7 +47,7 @@ const Header = (props) => {
   return (
     <View style={styles.root}>
       {
-        userSignedIn && <Icon
+        userSignedIn && <LIcon
         name="logout"
         size={20}
         onPress={() => handleLogout()}

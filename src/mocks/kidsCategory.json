@@ -9,42 +9,34 @@
                 "category": [
                 {
                 "id":1,
-                "title": "Combo",
+                "title": "+ ETHNIC WEAR",
                 "image":
-      "https://i.pinimg.com/736x/2f/b2/44/2fb2443e610392f288e61c983d4d01c4.jpg",
-				"navigateTo":"kids/combo" ,
-				"name": "Combo Details"
+      "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/efc4b19d-179f-4437-961c-839df50299a51604906586690-36-Essentials-Night_innerwear.jpg",
+				"navigateTo":"kids/ethnicWear" ,
+				"name": "ethenic wear Details"
                 },
                 {   
                     "id":2,
-                    "title": "Jens",
+                    "title": "+ T-SHIRTS & TOP",
                     "image":
-          "https://www.iciw.com/bilder/artiklar/ICIW-344.jpg",
-                    "navigateTo":"women/jens" ,
+          "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/c75a2039-4199-4174-b1b9-fecd30f7d3f91604906586359-29-Essentials-Tshirts_Tops.jpg",
+                    "navigateTo":"kids/t-shirts&top" ,
                     "name": "Jens Details"
                 },
                 {
                     "id":3,
-                    "title": "Sneakers",
-                    "image":"https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
-                    "navigateTo":"men/sneakers" ,
+                    "title": "+ ONESIES",
+                    "image":"https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/4e6eefd3-3355-4c1c-851e-48a49c97d5b31604906586407-30-Essentials-Onesies.jpg",
+                    "navigateTo":"kids/onesies" ,
                     "name": "Sneakers Details"
                 },
                 {
                     "id":4,
-                    "title": "Goggles",
+                    "title": "FLIP FLOP & SANDLES",
                     "image":
-          "https://ae01.alicdn.com/kf/Hf5b705bfd2e34eaf8d105df3c58f635do.jpg",
-                    "navigateTo":"men/goggles" ,
+          "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/33368b8b-8702-4108-96a9-b8fa5b7ed36f1604906586455-31-Essentials-FlipFlop_sandals.jpg",
+                    "navigateTo":"kids/flipflop" ,
                     "name": "goggles Details"
-                    },
-                    {   
-                        "id":5,
-                        "title": "Hats",
-                        "image":
-              "https://www.toptrendsguide.com/wp-content/uploads/2020/06/Mens-Hat-Styles.jpg",
-                        "navigateTo":"men/hats" ,
-                        "name": "Hats Details"
                     }
 
         ]

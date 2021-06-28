@@ -28,10 +28,10 @@ const ProductItem = ({data, navigation}) => {
                 </Text>
                 <Text style={styles.off}>{item.off}</Text>
               </View>
-              <Text style={styles.description}>{item.description}</Text>
+              <Text numberOfLines={1} style={styles.description}>{item.description}</Text>
               <View style={styles.mergedPrice}>
-                <Text style={styles.price}>{'$ ' + item.price + '   '}</Text>
-                <Text style={styles.oldPrice}>{'$ ' + item.oldPrice}</Text>
+                <Text style={styles.price}>{'₹ ' + item.price + '   '}</Text>
+                <Text style={styles.oldPrice}>{'₹ ' + item.oldPrice}</Text>
               </View>
             </View>
           </View>

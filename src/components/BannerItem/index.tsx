@@ -1,6 +1,8 @@
 import React from 'react';
 import {View, Text, Image, Dimensions} from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import { SCREENS } from '../../constants';
 import styles from './styles';
 
 interface BannerItemProps {
@@ -11,10 +13,10 @@ interface BannerItemProps {
   };
 }
 
-const BannerItem = ({data}) => {
+const BannerItem = ({data,navigation}) => {
   const windowWidth = Dimensions.get('window').width;
   return (
-    <View>
+    <TouchableOpacity onPress={()=>navigation.navigate(SCREENS.DYNAMIC_PAGE, {url: data.navigateTo})}>
       <Text style={styles.title}>{data.title}</Text>
       <View style={[styles.box, {width: windowWidth - 30}]}>
         <View>
@@ -26,7 +28,7 @@ const BannerItem = ({data}) => {
           />
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

@@ -1,0 +1,110 @@
+{
+    "pageData": {
+            "title": "Bitiya by Bhama"
+    },
+    "components": [
+            {
+                    "type": "IMAGE_CAROUSEL",
+                    "data": {
+                            "imageCarousel": [
+                                    {
+                                            "url": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2019/8/23/41712940-5bd6-4b93-9f6a-4c8be2ae8bdd1566545182163-1.jpg",
+                                            "id": 1
+                                    },
+                                    {
+                                        "url": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2019/8/23/ede19c27-707f-48d9-9ee1-91fc111a8f741566545182187-2.jpg",
+                                        "id": 2
+                                },
+                                {
+                                    "url": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2019/8/23/6a453f6e-7aa5-4dfd-8196-ed0cbbb6a17a1566545182211-3.jpg",
+                                    "id": 3
+                            },
+                            {
+                                "url": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2019/8/23/a43a245f-1084-4970-ab89-7beb9600ddd51566545182239-4.jpg",
+                                "id": 4
+                        },
+                        {
+                            "url": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2019/8/23/e4894be3-139c-4c80-aa6f-a69d09bb6df31566545182265-5.jpg",
+                            "id": 5
+                    }
+                            ]
+                    }
+            },
+            {
+                    "type": "PRODUCT_HEADER",
+                    "data": {
+                            "title": "Bitiya by Bhama",
+                            "mrp": 2599,
+                            "price": 909,
+                            "rating": 4
+                    }
+            },
+            {
+                    "type": "SIZE_SELECTOR",
+                    "data": {
+                            "sizeSelector": [
+                                    "3-4Y",
+                                    "4-5Y",
+                                    "5-6Y",
+                                    "6-7Y"
+                            ]
+                    }
+            },
+            {
+                    "type": "DETAIL_BOX",
+                    "data": {
+                            "title": "Details",
+                            "description": " Peach-Coloured printed woven fit and flare dress, has a round neck, short sleeves, concealed zip closure, and flared hem."
+                    }
+            },
+            {
+                    "type": "DETAILS",
+                    "data": {
+                            "title": "Specifications",
+                            "keyValuePair": [
+                                    {
+                                            "key": "Shape",
+                                            "value": "Fit and Flare"
+                                    },
+                                    {
+                                            "key": "Length",
+                                            "value": "Midi"
+                                    },
+                                    {
+                                        "key": "Neck",
+                                        "value": "Round"
+                                },
+                                {
+                                    "key": "Print and Pattern Type",
+                                    "value": "Abstract"
+                            },
+                            {
+                                "key": "Sleeve Length",
+                                "value": "Short Sleeves"
+                        },
+                        {
+                            "key": "Occasion",
+                            "value": "Casual"
+                    },{
+                        "key": "Knit Woven",
+                        "value": "Woven"
+                }
+                            ]
+                    }
+            },
+            {
+                    "type": "BUTTON",
+                    "data": {
+                            "title": "Add to Cart",
+                            "navigateTo": "/cart"
+                    }
+            },
+            {
+                    "type": "BUTTON",
+                    "data": {
+                            "title": "Buy Now",
+                            "navigateTo": "/cart"
+                    }
+            }
+    ]
+}
