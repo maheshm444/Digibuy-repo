@@ -20,11 +20,11 @@ import colors from '../../assets/colors';
 // }
 
 export default function DynamicPage(props) {
-  const [loading, setloading] = useState(false);
+  const [loading, setloading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
       setloading(false);
-    }, 1500);
+    }, 2500);
   }, [loading]);
   const {navigation} = props;
   const url = props?.route?.params?.url;

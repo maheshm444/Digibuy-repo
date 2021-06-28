@@ -4,7 +4,7 @@ import { View, Text, Pressable, StyleSheet } from 'react-native';
 const QuantityDropdown = ({countInStock, changeQuantity}) => {
     const [quantity, setQuantity] = useState(1)
   const onMinus = () => {
-    setQuantity(Math.max(0, quantity - 1));
+    setQuantity(Math.max(1, quantity - 1));
     if(quantity>0){
       changeQuantity(quantity-1)
     }

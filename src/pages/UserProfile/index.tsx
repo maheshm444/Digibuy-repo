@@ -32,12 +32,7 @@ const MyAccountScreen = () => {
       id: '3',
       title: 'Help',
       icon: 'smile-o',
-    },
-    {
-      id: '4',
-      title: 'Logout',
-      icon: 'user',
-    },
+    }
   ];
   return (
     <View style={styles.root}>

@@ -1,11 +1,17 @@
 import React, { useState } from 'react'
 import { View, Text, StyleSheet, Dimensions, Image } from 'react-native'
+import { useDispatch, useSelector } from 'react-redux'
+import cartSlice, { selectCartItems, setCartItems } from '../../redux/cartSlice'
 import ButtonComponent from '../ButtonComponent'
 import PriceComponent from '../PriceComponent'
 import QuantityDropdown from '../QuantityDropdown'
 const {height, width} = Dimensions.get('window')
 const Cart = ({data}) => {
-
+const dispatch =  useDispatch()
+const cartItem = useSelector(selectCartItems)
+console.log("cartItem_____________",cartItem);
+//dispatch(setCartItems([data]))
+console.log("cartItem_____________",cartItem);
     const [qty, setQty] = useState(1)
     const changeQuantity =(x)=>{
         setQty(x)

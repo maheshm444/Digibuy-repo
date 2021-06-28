@@ -51,7 +51,7 @@ const Header = (props) => {
         name="logout"
         size={20}
         onPress={() => handleLogout()}
-        color="#022e2b"
+        color="#72cdc8"
         style={styles.userButton}
       />
       }
@@ -60,17 +60,17 @@ const Header = (props) => {
         name="user"
         size={20}
         onPress={() => handleUser()}
-        color="#022e2b"
+        color="#72cdc8"
         style={styles.userButton}
       />
 
-      <Icon
+    { /* <Icon
         name="search"
         size={20}
         onPress={() => alert('Search Data')}
         color="#72cdc8"
         style={styles.userButton}
-      />
+    />*/}
     </View>
   );
 };

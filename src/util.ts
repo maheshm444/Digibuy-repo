@@ -9,6 +9,7 @@ import kidsCategoryJson from './mocks/kidsCategory.json';
 import tshirtmen from './mocks/tshirtmen.json';
 import productJson from './mocks/product.json';
 import cartJson from './mocks/cart.json'
+import newLink from "./mocks/newLink.json"
 // import menProducts1 from './mocks/menProducts1.json';
 import topWomen from './mocks/topWomen.json';
 import jeanWomen from './mocks/jeanWomen.json';
@@ -131,7 +132,10 @@ export function fetchData(url) {
   }
   else if (url === '/kidsProducts?id=1') {
     return kidsProducts1;
+  }else if (url === '/newLink') {
+    return newLink;
   }
+  
    else {
     return subCategoriesJson;
   }
