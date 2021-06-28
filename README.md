@@ -12,8 +12,8 @@
 </p>
 
 ```
-        yarn install
-        yarn start
-        yarn android
+yarn install
+yarn start
+yarn android
 
 ```
