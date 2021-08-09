@@ -87,15 +87,6 @@
 				"navigateTo":"women/top",
 				"image": "https://s3.envato.com/files/201875733/BEE-1631-Fashion%20Sale%20Banners_01_Preview4.jpg",
 			}
-		},
-		{
-			"type": "BANNER",
-			"data": {
-				"id": "3",
-				"title": "Women Tops",
-				"navigateTo":"/newLink",
-				"image": "https://s3.envato.com/files/201875733/BEE-1631-Fashion%20Sale%20Banners_01_Preview4.jpg"
-			}
 		}
 	]
 }
